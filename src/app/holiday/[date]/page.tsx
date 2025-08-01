@@ -14,6 +14,7 @@ import {
   generateHolidayTheme,
   Holiday,
 } from "@/lib/game/holidayThemes";
+import { GameTileLegend } from "@/components/game/GameTileLegend";
 
 export default function HolidayPage() {
   const params = useParams();
@@ -134,29 +135,95 @@ export default function HolidayPage() {
               </div>
 
               {/* 游戏棋盘 */}
-              <div className="md:col-span-2 flex justify-center">
+              <div className="md:col-span-2 flex flex-col items-center">
                 <GameBoard
                   board={gameState.board}
                   theme={`holiday-${dateString}`}
                 />
+                <GameTileLegend theme={`holiday-${dateString}`} />
               </div>
             </div>
 
-            {/* 节日信息卡片 */}
-            <div className="mt-8 bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-2xl font-bold mb-4">About {holiday.name}</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold mb-2">Description</h3>
-                  <p className="text-gray-600">{holiday.description}</p>
+            {/* 节日知识文章 */}
+            <div className="mt-8 bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                The History and Significance of {holiday.name}
+              </h2>
+
+              <div className="prose prose-lg max-w-none">
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-3">
+                    Origins and Cultural Background
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    {holiday.name} has deep roots in{" "}
+                    {holiday.country === "Global"
+                      ? "global culture and traditions"
+                      : `${holiday.country} culture and traditions`}
+                    . This {holiday.category} celebration represents more than
+                    just a date on the calendar - it embodies the values,
+                    beliefs, and cultural heritage that have been passed down
+                    through generations.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    {holiday.description} The significance of this day extends
+                    beyond mere celebration, serving as a reminder of the rich
+                    tapestry of human culture and the importance of preserving
+                    and honoring our diverse traditions.
+                  </p>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Keywords</h3>
+
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-3">
+                    Modern Celebrations and Traditions
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Today, {holiday.name} is celebrated in various ways around
+                    the world. From traditional ceremonies to modern
+                    interpretations, people find meaningful ways to honor this
+                    special day. The celebration often includes cultural
+                    activities, educational events, and community gatherings
+                    that bring people together to share in the spirit of the
+                    occasion.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    In the digital age, {holiday.name} has also found new
+                    expressions through online platforms, social media, and
+                    interactive experiences like our 2048 game theme, which
+                    allows players to engage with the holiday&apos;s symbols and
+                    meanings in a fun, educational way.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-3">
+                    Educational Value and Learning Opportunities
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    {holiday.name} provides an excellent opportunity for
+                    learning about different cultures, historical events, and
+                    social movements. Understanding the context and significance
+                    of this holiday helps foster cross-cultural understanding
+                    and appreciation for diversity.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Through games like 2048 with {holiday.name} theme, players
+                    can learn about the holiday&apos;s symbols, colors, and
+                    cultural significance while enjoying an engaging puzzle
+                    experience. This innovative approach to cultural education
+                    makes learning both fun and memorable.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">
+                    Key Themes and Keywords:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {holiday.keywords.map((keyword, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
                       >
                         {keyword}
                       </span>

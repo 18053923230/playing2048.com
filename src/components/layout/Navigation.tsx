@@ -8,9 +8,9 @@ export const Navigation: React.FC = () => {
 
   const navItems = [
     { href: "/", label: "Home", icon: "🏠" },
-    { href: "/cupcakes", label: "Cupcakes", icon: "🧁" },
-    { href: "/christmas", label: "Christmas", icon: "🎄" },
-    { href: "/halloween", label: "Halloween", icon: "🎃" },
+    { href: "/game/cupcakes", label: "Cupcakes", icon: "🧁" },
+    { href: "/game/christmas", label: "Christmas", icon: "🎄" },
+    { href: "/game/halloween", label: "Halloween", icon: "🎃" },
     { href: "/strategy", label: "Strategy", icon: "📚" },
   ];
 
