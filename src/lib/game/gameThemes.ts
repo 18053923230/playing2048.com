@@ -1,0 +1,73 @@
+import { ThemeConfig } from "@/types/game";
+
+export const gameThemes: Record<string, ThemeConfig> = {
+  cupcakes: {
+    name: "Cupcakes",
+    colors: {
+      background: "#fdf6e3",
+      tile: "#f0e68c",
+      text: "#2f4f4f",
+      accent: "#ff69b4",
+    },
+    tiles: {
+      2: { label: "Vanilla", color: "#f0e68c", emoji: "🧁" },
+      4: { label: "Chocolate", color: "#8b4513", emoji: "🍫" },
+      8: { label: "Strawberry", color: "#ff69b4", emoji: "🍓" },
+      16: { label: "Blueberry", color: "#4169e1", emoji: "🫐" },
+      32: { label: "Lemon", color: "#ffff00", emoji: "🍋" },
+      64: { label: "Orange", color: "#ffa500", emoji: "🍊" },
+      128: { label: "Mint", color: "#98fb98", emoji: "🌿" },
+      256: { label: "Caramel", color: "#d2691e", emoji: "🍯" },
+      512: { label: "Raspberry", color: "#dc143c", emoji: "🍒" },
+      1024: { label: "Rainbow", color: "#ff1493", emoji: "🌈" },
+      2048: { label: "Golden", color: "#ffd700", emoji: "👑" },
+      4096: { label: "Diamond", color: "#00ffff", emoji: "💎" },
+    },
+  },
+  christmas: {
+    name: "Christmas",
+    colors: {
+      background: "#f0f8ff",
+      tile: "#90ee90",
+      text: "#2f4f4f",
+      accent: "#ff0000",
+    },
+    tiles: {
+      2: { label: "Snowflake", color: "#ffffff", emoji: "❄️" },
+      4: { label: "Candy Cane", color: "#ff0000", emoji: "🍭" },
+      8: { label: "Holly", color: "#228b22", emoji: "🎄" },
+      16: { label: "Gift", color: "#ff69b4", emoji: "🎁" },
+      32: { label: "Star", color: "#ffd700", emoji: "⭐" },
+      64: { label: "Bell", color: "#ffa500", emoji: "🔔" },
+      128: { label: "Santa", color: "#ff0000", emoji: "🎅" },
+      256: { label: "Reindeer", color: "#8b4513", emoji: "🦌" },
+      512: { label: "Elf", color: "#228b22", emoji: "🧝" },
+      1024: { label: "Angel", color: "#ffffff", emoji: "👼" },
+      2048: { label: "Christmas Tree", color: "#228b22", emoji: "🎄" },
+      4096: { label: "North Pole", color: "#00ffff", emoji: "🧭" },
+    },
+  },
+  halloween: {
+    name: "Halloween",
+    colors: {
+      background: "#2f2f2f",
+      tile: "#8b4513",
+      text: "#ffffff",
+      accent: "#ff8c00",
+    },
+    tiles: {
+      2: { label: "Pumpkin", color: "#ff8c00", emoji: "🎃" },
+      4: { label: "Ghost", color: "#ffffff", emoji: "👻" },
+      8: { label: "Bat", color: "#2f2f2f", emoji: "🦇" },
+      16: { label: "Spider", color: "#8b0000", emoji: "🕷️" },
+      32: { label: "Witch", color: "#800080", emoji: "🧙‍♀️" },
+      64: { label: "Skeleton", color: "#f5f5dc", emoji: "💀" },
+      128: { label: "Vampire", color: "#8b0000", emoji: "🧛" },
+      256: { label: "Werewolf", color: "#696969", emoji: "🐺" },
+      512: { label: "Zombie", color: "#228b22", emoji: "🧟" },
+      1024: { label: "Mummy", color: "#f5f5dc", emoji: "👻" },
+      2048: { label: "Frankenstein", color: "#228b22", emoji: "🧟‍♂️" },
+      4096: { label: "Dracula", color: "#8b0000", emoji: "��‍♂️" },
+    },
+  },
+};
