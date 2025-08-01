@@ -276,24 +276,32 @@ export class Game2048 {
 
   private loadBestScore(): number {
     if (typeof window === "undefined") return 0;
-    return parseInt(localStorage.getItem("2048-best-score") || "0");
+    return parseInt(
+      localStorage.getItem(`2048-best-score-${this.config.theme}`) || "0"
+    );
   }
 
   private saveGame(): void {
     if (typeof window === "undefined") return;
 
-    localStorage.setItem("2048-game-state", JSON.stringify(this.state));
+    localStorage.setItem(
+      `2048-game-state-${this.config.theme}`,
+      JSON.stringify(this.state)
+    );
 
     if (this.state.score > this.state.bestScore) {
       this.state.bestScore = this.state.score;
-      localStorage.setItem("2048-best-score", this.state.bestScore.toString());
+      localStorage.setItem(
+        `2048-best-score-${this.config.theme}`,
+        this.state.bestScore.toString()
+      );
     }
   }
 
   public loadGame(): void {
     if (typeof window === "undefined") return;
 
-    const saved = localStorage.getItem("2048-game-state");
+    const saved = localStorage.getItem(`2048-game-state-${this.config.theme}`);
     if (saved) {
       try {
         const loadedState = JSON.parse(saved);

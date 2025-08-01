@@ -2,7 +2,7 @@
 
 import React from "react";
 import { GameTile } from "@/types/game";
-import { gameThemes } from "@/lib/game/gameThemes";
+import { getThemeConfig } from "@/lib/game/gameThemes";
 
 interface GameTileComponentProps {
   tile: GameTile;
@@ -15,7 +15,7 @@ export const GameTileComponent: React.FC<GameTileComponentProps> = ({
   theme,
   onClick,
 }) => {
-  const themeConfig = gameThemes[theme];
+  const themeConfig = getThemeConfig(theme);
   const tileConfig =
     themeConfig.tiles[tile.value as keyof typeof themeConfig.tiles];
 

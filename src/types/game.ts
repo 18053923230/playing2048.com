@@ -1,5 +1,10 @@
 export type Direction = "up" | "down" | "left" | "right";
-export type GameTheme = "cupcakes" | "christmas" | "halloween" | "classic";
+export type GameTheme =
+  | "cupcakes"
+  | "christmas"
+  | "halloween"
+  | "classic"
+  | string;
 export type GameStatus = "playing" | "won" | "lost" | "paused";
 
 export interface GameTile {

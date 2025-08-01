@@ -1,4 +1,5 @@
 import { ThemeConfig } from "@/types/game";
+import { generateHolidayTheme, getHolidayByDate } from "./holidayThemes";
 
 export const gameThemes: Record<string, ThemeConfig> = {
   cupcakes: {
@@ -71,3 +72,18 @@ export const gameThemes: Record<string, ThemeConfig> = {
     },
   },
 };
+
+// 获取主题配置的函数
+export function getThemeConfig(themeName: string): ThemeConfig {
+  // 检查是否是节日主题
+  if (themeName.startsWith("holiday-")) {
+    const dateString = themeName.replace("holiday-", "");
+    const holiday = getHolidayByDate(dateString);
+    if (holiday) {
+      return generateHolidayTheme(holiday);
+    }
+  }
+
+  // 返回预定义主题或默认主题
+  return gameThemes[themeName] || gameThemes.cupcakes;
+}

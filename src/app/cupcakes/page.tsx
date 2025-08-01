@@ -9,6 +9,7 @@ import { GameOverlay } from "@/components/game/GameOverlay";
 import { Game2048 } from "@/lib/game/gameLogic";
 import { seoConfig } from "@/lib/seo/seoConfig";
 import { GameState, Direction } from "@/types/game";
+import { GameTileLegend } from "@/components/game/GameTileLegend";
 
 export default function CupcakesPage() {
   const [game, setGame] = useState<Game2048 | null>(null);

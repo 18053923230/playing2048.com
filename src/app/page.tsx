@@ -1,5 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { seoConfig } from "@/lib/seo/seoConfig";
+
 import Link from "next/link";
 
 export default function HomePage() {
