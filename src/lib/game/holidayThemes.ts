@@ -826,7 +826,7 @@ export const globalHolidays: Holiday[] = [
       accent: "#FFFFFF",
     },
     emojis: ["🇦🇺", "🦘", "🏖️", "🌊", "🌞"],
-    keywords: ["australia", "national day", "first fleet", "celebration"],
+    keywords: ["australia day", "national day", "first fleet", "celebration"],
   },
 
   // 二月
@@ -1292,8 +1292,344 @@ export const globalHolidays: Holiday[] = [
       "education",
     ],
   },
+  {
+    date: "02-22",
+    name: "George Washington's Birthday",
+    country: "USA",
+    category: "national",
+    description: "A day to honor the first President of the United States",
+    article: {
+      origins:
+        "George Washington's Birthday commemorates the birth of George Washington, the first President of the United States and a key figure in the American Revolution. Born on February 22, 1732, Washington is often called the 'Father of His Country' for his leadership in establishing the United States.",
+      modernCelebrations:
+        "Today, this day is often celebrated as Presidents' Day, honoring all U.S. presidents. Americans reflect on the nation's history, visit historical sites, and learn about the founding of the United States. Many schools hold educational programs about American history and democracy.",
+      educationalValue:
+        "This day teaches about American history, democracy, and the importance of leadership. It provides opportunities to learn about the founding of the United States, the American Revolution, and the values that shaped the nation. It promotes civic education and appreciation for democratic institutions.",
+    },
+    colors: {
+      primary: "#FF0000",
+      secondary: "#0000FF",
+      accent: "#FFFFFF",
+    },
+    emojis: ["🇺🇸", "🏛️", "📜", "🗽", "🎖️"],
+    keywords: [
+      "george washington",
+      "presidents day",
+      "usa",
+      "american history",
+    ],
+  },
+  {
+    date: "02-23",
+    name: "Día de la Bandera",
+    country: "Mexico",
+    category: "national",
+    description: "Mexican Flag Day celebrating the national flag",
+    article: {
+      origins:
+        "Día de la Bandera (Flag Day) was established in 1937 to commemorate the creation of the Mexican flag and honor the national symbol. The flag represents Mexico's independence, unity, and national identity, with its green, white, and red colors symbolizing hope, purity, and the blood of heroes.",
+      modernCelebrations:
+        "Mexicans celebrate by displaying the flag, participating in patriotic ceremonies, and learning about the flag's history and symbolism. Schools hold educational programs about Mexican history and national symbols. Communities organize flag-raising ceremonies and cultural events.",
+      educationalValue:
+        "This day teaches about Mexican history, national symbols, and the importance of national identity. It provides opportunities to learn about Mexico's independence movement, cultural heritage, and the values represented by the flag. It promotes patriotism and cultural pride.",
+    },
+    colors: {
+      primary: "#228B22",
+      secondary: "#FFFFFF",
+      accent: "#FF0000",
+    },
+    emojis: ["🇲🇽", "🏁", "🎖️", "📜", "🎭"],
+    keywords: ["dia de la bandera", "mexican flag", "mexico", "patriotism"],
+  },
+  {
+    date: "02-24",
+    name: "National Tortilla Chip Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the beloved tortilla chip snack",
+    article: {
+      origins:
+        "National Tortilla Chip Day celebrates the popular snack that has become a staple in American cuisine. Tortilla chips, made from corn tortillas, have their origins in Mexican cuisine and have been adapted and popularized worldwide.",
+      modernCelebrations:
+        "People enjoy tortilla chips with various dips, restaurants offer special chip and dip combinations, and families gather for Mexican-themed meals. Many learn about the history of Mexican cuisine and its influence on American food culture.",
+      educationalValue:
+        "This day teaches about cultural food exchange, Mexican cuisine, and the globalization of food. It promotes appreciation for diverse culinary traditions and the evolution of popular snacks.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      accent: "#228B22",
+    },
+    emojis: ["🌽", "🍽️", "🇲🇽", "🥑", "🧀"],
+    keywords: ["tortilla chip day", "snacks", "mexican food", "dips"],
+  },
+  {
+    date: "02-25",
+    name: "National Clam Chowder Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the hearty New England soup",
+    article: {
+      origins:
+        "National Clam Chowder Day celebrates the traditional New England soup that has been a staple of American coastal cuisine for centuries. Clam chowder represents the rich maritime heritage of the northeastern United States.",
+      modernCelebrations:
+        "Restaurants serve special clam chowder dishes, people make homemade chowder, and communities celebrate New England culinary traditions. Many learn about regional American cuisine and maritime history.",
+      educationalValue:
+        "This day teaches about regional American cuisine, maritime history, and cultural food traditions. It promotes appreciation for local food heritage and the diversity of American culinary traditions.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#87CEEB",
+      accent: "#8B4513",
+    },
+    emojis: ["🦪", "🍲", "🌊", "⚓", "🏖️"],
+    keywords: ["clam chowder day", "new england", "seafood", "soup"],
+  },
+  {
+    date: "02-26",
+    name: "National Pistachio Day",
+    country: "USA",
+    category: "cultural",
+    description:
+      "A day to celebrate the nutritious and delicious pistachio nut",
+    article: {
+      origins:
+        "National Pistachio Day celebrates the pistachio nut, which has been cultivated for thousands of years in the Middle East and Mediterranean regions. Pistachios are known for their nutritional value and distinctive green color.",
+      modernCelebrations:
+        "People enjoy pistachios in various forms, learn about their health benefits, and discover pistachio-based recipes. Many health organizations promote the nutritional value of nuts and healthy snacking habits.",
+      educationalValue:
+        "This day teaches about nutrition, healthy eating habits, and the history of food cultivation. It promotes understanding of agricultural traditions and the importance of nutritious snacks.",
+    },
+    colors: {
+      primary: "#228B22",
+      secondary: "#FFD700",
+      accent: "#8B4513",
+    },
+    emojis: ["🥜", "🌰", "💚", "🍪", "🥜"],
+    keywords: ["pistachio day", "nuts", "nutrition", "healthy snacks"],
+  },
+  {
+    date: "02-27",
+    name: "International Polar Bear Day",
+    country: "Global",
+    category: "international",
+    description: "A day to raise awareness about polar bear conservation",
+    article: {
+      origins:
+        "International Polar Bear Day was established by Polar Bears International to raise awareness about the impact of global warming and reduced sea ice on polar bear populations. The day focuses on the need to reduce carbon emissions and protect polar bear habitats.",
+      modernCelebrations:
+        "People learn about polar bear conservation, participate in climate action events, and support organizations working to protect polar bears. Many zoos and wildlife organizations hold educational programs about polar bears and their Arctic habitat.",
+      educationalValue:
+        "This day teaches about climate change, wildlife conservation, and environmental protection. It provides opportunities to learn about Arctic ecosystems, the impact of human activities on wildlife, and the importance of taking action to protect endangered species.",
+    },
+    colors: {
+      primary: "#FFFFFF",
+      secondary: "#87CEEB",
+      accent: "#4169E1",
+    },
+    emojis: ["🐻‍❄️", "❄️", "🌨️", "🏔️", "🌍"],
+    keywords: ["polar bear day", "conservation", "climate change", "arctic"],
+  },
+  {
+    date: "02-28",
+    name: "National Science Day",
+    country: "India",
+    category: "national",
+    description: "A day to celebrate scientific achievements and discoveries",
+    article: {
+      origins:
+        "National Science Day commemorates the discovery of the Raman Effect by Indian physicist Sir C.V. Raman on February 28, 1928. This discovery earned him the Nobel Prize in Physics in 1930, making him the first Asian to receive a Nobel Prize in science.",
+      modernCelebrations:
+        "Schools and universities hold science exhibitions, competitions, and workshops. Students present science projects, and communities celebrate scientific achievements. Many organizations promote STEM education and scientific literacy.",
+      educationalValue:
+        "This day teaches about scientific discovery, the importance of research, and the contributions of Indian scientists to global knowledge. It promotes STEM education and encourages young people to pursue careers in science.",
+    },
+    colors: {
+      primary: "#FF0000",
+      secondary: "#FFD700",
+      accent: "#228B22",
+    },
+    emojis: ["🔬", "🧪", "📚", "💡", "🚀"],
+    keywords: ["national science day", "india", "science", "discovery"],
+  },
+  {
+    date: "02-29",
+    name: "Leap Year Day",
+    country: "UK",
+    category: "cultural",
+    description: "A special day that occurs only in leap years",
+    article: {
+      origins:
+        "Leap Year Day, February 29th, occurs only in leap years to keep our calendar in sync with the Earth's orbit around the Sun. This tradition dates back to the Julian calendar reforms, and February 29th has become associated with special traditions and folklore, particularly the tradition of women proposing to men.",
+      modernCelebrations:
+        "People born on February 29th (leaplings) celebrate their rare birthdays, and many participate in leap year traditions. Some cultures have special customs for this day, and it's often seen as a day for doing things differently or taking chances.",
+      educationalValue:
+        "This day teaches about astronomy, calendar systems, and the science behind leap years. It provides opportunities to learn about Earth's orbit, time measurement, and how humans have developed systems to track time accurately.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFD700",
+      accent: "#FF69B4",
+    },
+    emojis: ["📅", "⏰", "🌍", "⭐", "🎉"],
+    keywords: ["leap year day", "february 29", "calendar", "astronomy"],
+  },
 
   // 三月
+  {
+    date: "03-01",
+    name: "National Peanut Butter Lover's Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the beloved peanut butter spread",
+    article: {
+      origins:
+        "National Peanut Butter Lover's Day celebrates one of America's favorite spreads. Peanut butter was first patented in the late 19th century and has become a staple in American households, known for its versatility and nutritional value.",
+      modernCelebrations:
+        "People enjoy peanut butter in various forms - sandwiches, cookies, smoothies, and more. Many learn about the history of peanut butter production and its role in American food culture.",
+      educationalValue:
+        "This day teaches about food history, nutrition, and American culinary traditions. It promotes understanding of food production and the evolution of popular food items.",
+    },
+    colors: {
+      primary: "#8B4513",
+      secondary: "#FFD700",
+      accent: "#FFA500",
+    },
+    emojis: ["🥜", "🍞", "🍪", "🥪", "🥜"],
+    keywords: ["peanut butter day", "spread", "sandwiches", "nutrition"],
+  },
+  {
+    date: "03-02",
+    name: "National Read Across America Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to promote reading and literacy",
+    article: {
+      origins:
+        "National Read Across America Day was established by the National Education Association to promote reading among children. It coincides with Dr. Seuss's birthday and encourages reading as a fundamental skill.",
+      modernCelebrations:
+        "Schools organize reading events, libraries hold special programs, and communities encourage reading activities. Many people read to children and promote literacy awareness.",
+      educationalValue:
+        "This day teaches the importance of literacy, reading skills, and education. It promotes a love for books and learning from an early age.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFD700",
+      accent: "#FF69B4",
+    },
+    emojis: ["📚", "📖", "👶", "🎭", "📝"],
+    keywords: ["read across america", "literacy", "reading", "education"],
+  },
+  {
+    date: "03-03",
+    name: "World Wildlife Day",
+    country: "Global",
+    category: "international",
+    description: "A day to celebrate and raise awareness about wildlife",
+    article: {
+      origins:
+        "World Wildlife Day was proclaimed by the United Nations to celebrate and raise awareness about the world's wild animals and plants. It highlights the importance of wildlife conservation and biodiversity.",
+      modernCelebrations:
+        "Organizations hold wildlife awareness events, people learn about endangered species, and communities participate in conservation activities. Many zoos and wildlife parks offer educational programs.",
+      educationalValue:
+        "This day teaches about biodiversity, wildlife conservation, and environmental protection. It promotes understanding of the importance of preserving natural habitats.",
+    },
+    colors: {
+      primary: "#228B22",
+      secondary: "#8B4513",
+      accent: "#FFD700",
+    },
+    emojis: ["🦁", "🐘", "🦒", "🐼", "🦊"],
+    keywords: ["world wildlife day", "conservation", "biodiversity", "animals"],
+  },
+  {
+    date: "03-04",
+    name: "National Grammar Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate proper grammar and language",
+    article: {
+      origins:
+        "National Grammar Day was established to promote proper grammar usage and celebrate the English language. It encourages people to appreciate the importance of clear communication.",
+      modernCelebrations:
+        "Schools hold grammar workshops, people share grammar tips, and organizations promote proper language usage. Many celebrate the beauty and precision of language.",
+      educationalValue:
+        "This day teaches about language skills, communication, and the importance of clear writing. It promotes literacy and effective communication skills.",
+    },
+    colors: {
+      primary: "#2F4F4F",
+      secondary: "#FFD700",
+      accent: "#4169E1",
+    },
+    emojis: ["📝", "✍️", "📚", "🎯", "💬"],
+    keywords: ["grammar day", "language", "writing", "communication"],
+  },
+  {
+    date: "03-05",
+    name: "National Cheese Doodle Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the cheesy snack",
+    article: {
+      origins:
+        "National Cheese Doodle Day celebrates the popular cheese-flavored snack that has been enjoyed by generations. These crunchy snacks represent the creativity in snack food manufacturing.",
+      modernCelebrations:
+        "People enjoy cheese doodles, learn about snack food history, and share their favorite snack memories. Many celebrate the simple joy of comfort foods.",
+      educationalValue:
+        "This day teaches about food manufacturing, snack culture, and the evolution of convenience foods. It promotes understanding of food industry innovations.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      accent: "#FF69B4",
+    },
+    emojis: ["🧀", "🍿", "🎪", "🍽️", "🧀"],
+    keywords: ["cheese doodle day", "snacks", "comfort food", "cheese"],
+  },
+  {
+    date: "03-06",
+    name: "National Oreo Cookie Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the world's favorite cookie",
+    article: {
+      origins:
+        "National Oreo Cookie Day celebrates the iconic sandwich cookie that was first introduced in 1912. Oreos have become one of the world's most popular cookies, known for their distinctive design and taste.",
+      modernCelebrations:
+        "People enjoy Oreo cookies, try different ways to eat them, and share Oreo recipes. Many learn about the history of this beloved cookie and its cultural impact.",
+      educationalValue:
+        "This day teaches about food branding, cultural impact of popular foods, and the history of commercial baking. It promotes appreciation for food innovation.",
+    },
+    colors: {
+      primary: "#000000",
+      secondary: "#FFFFFF",
+      accent: "#FFD700",
+    },
+    emojis: ["🍪", "🥛", "🍫", "🍪", "🎭"],
+    keywords: ["oreo day", "cookies", "snacks", "chocolate"],
+  },
+  {
+    date: "03-07",
+    name: "National Cereal Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate breakfast cereals",
+    article: {
+      origins:
+        "National Cereal Day celebrates the breakfast staple that has been part of American mornings for over a century. Cereal represents convenience, nutrition, and the evolution of breakfast culture.",
+      modernCelebrations:
+        "People enjoy their favorite cereals, try new varieties, and learn about cereal history. Many celebrate the importance of breakfast and healthy eating habits.",
+      educationalValue:
+        "This day teaches about nutrition, breakfast culture, and food marketing. It promotes understanding of healthy eating habits and food industry development.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      accent: "#228B22",
+    },
+    emojis: ["🥣", "🥛", "🌾", "🍯", "🥣"],
+    keywords: ["cereal day", "breakfast", "nutrition", "grains"],
+  },
   {
     date: "03-08",
     name: "International Women's Day",
@@ -1309,19 +1645,56 @@ export const globalHolidays: Holiday[] = [
     emojis: ["👩", "💪", "🌹", "🎉", "✨"],
     keywords: ["women's day", "gender equality", "empowerment", "celebration"],
   },
+
   {
-    date: "03-17",
-    name: "St. Patrick's Day",
-    country: "Ireland",
+    date: "03-18",
+    name: "National Sloppy Joe Day",
+    country: "USA",
     category: "cultural",
-    description: "Celebrate Irish culture and heritage",
+    description: "A day to celebrate the messy but delicious sandwich",
+    article: {
+      origins:
+        "National Sloppy Joe Day celebrates the beloved sandwich made with ground beef, tomato sauce, and seasonings. This comfort food has been a staple in American households for generations.",
+      modernCelebrations:
+        "People make sloppy joes, share recipes, and enjoy this classic comfort food. Many learn about the history of this sandwich and its place in American cuisine.",
+      educationalValue:
+        "This day teaches about American comfort food, culinary history, and the evolution of popular dishes. It promotes appreciation for simple, satisfying meals.",
+    },
     colors: {
-      primary: "#228B22",
-      secondary: "#32CD32",
+      primary: "#8B4513",
+      secondary: "#FF0000",
       accent: "#FFD700",
     },
-    emojis: ["🍀", "☘️", "🌿", "🍺", "🎭"],
-    keywords: ["st patrick", "ireland", "green", "shamrock"],
+    emojis: ["🥪", "🍖", "🍅", "🍞", "🍽️"],
+    keywords: [
+      "sloppy joe day",
+      "sandwiches",
+      "comfort food",
+      "american cuisine",
+    ],
+  },
+  {
+    date: "03-19",
+    name: "National Chocolate Caramel Day",
+    country: "USA",
+    category: "cultural",
+    description:
+      "A day to celebrate the sweet combination of chocolate and caramel",
+    article: {
+      origins:
+        "National Chocolate Caramel Day celebrates the delicious combination of chocolate and caramel, two beloved flavors that have been enjoyed together for centuries.",
+      modernCelebrations:
+        "People enjoy chocolate caramel treats, try new recipes, and learn about the history of these confections. Many bakeries offer special chocolate caramel desserts.",
+      educationalValue:
+        "This day teaches about confectionery history, flavor combinations, and the art of dessert making. It promotes appreciation for culinary creativity and sweet traditions.",
+    },
+    colors: {
+      primary: "#8B4513",
+      secondary: "#FFD700",
+      accent: "#FFA500",
+    },
+    emojis: ["🍫", "🍯", "🍬", "🍪", "🍫"],
+    keywords: ["chocolate caramel day", "dessert", "sweets", "confectionery"],
   },
   {
     date: "03-20",
@@ -1338,8 +1711,204 @@ export const globalHolidays: Holiday[] = [
     emojis: ["😊", "🌈", "☀️", "🎉", "💛"],
     keywords: ["happiness", "joy", "well-being", "positive thinking"],
   },
-
-  // 四月
+  {
+    date: "03-09",
+    name: "National Barbie Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the iconic Barbie doll",
+    article: {
+      origins:
+        "National Barbie Day celebrates the iconic Barbie doll, first introduced by Mattel in 1959. Barbie has become a cultural phenomenon, representing fashion, dreams, and the evolution of toys for girls.",
+      modernCelebrations:
+        "People collect Barbie dolls, learn about Barbie's history, and celebrate the impact of this iconic toy on popular culture. Many reflect on how Barbie has evolved over the decades.",
+      educationalValue:
+        "This day teaches about toy history, cultural impact of popular items, and the evolution of children's entertainment. It promotes understanding of how toys reflect and influence society.",
+    },
+    colors: {
+      primary: "#FF69B4",
+      secondary: "#FFD700",
+      accent: "#FF1493",
+    },
+    emojis: ["👗", "🎭", "🎪", "💖", "🎨"],
+    keywords: ["barbie day", "dolls", "toys", "fashion"],
+  },
+  {
+    date: "03-10",
+    name: "National Mario Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the beloved video game character",
+    article: {
+      origins:
+        "National Mario Day celebrates the iconic Nintendo character Mario, who first appeared in 1981. Mario has become one of the most recognizable video game characters worldwide.",
+      modernCelebrations:
+        "Gamers play Mario games, cosplay as Mario characters, and celebrate video game culture. Many learn about the history of video games and Nintendo's impact on gaming.",
+      educationalValue:
+        "This day teaches about video game history, digital entertainment, and the evolution of interactive media. It promotes appreciation for gaming culture and digital creativity.",
+    },
+    colors: {
+      primary: "#FF0000",
+      secondary: "#FFD700",
+      accent: "#4169E1",
+    },
+    emojis: ["🎮", "🍄", "⭐", "🎪", "🎯"],
+    keywords: ["mario day", "video games", "nintendo", "gaming"],
+  },
+  {
+    date: "03-11",
+    name: "World Plumbing Day",
+    country: "Global",
+    category: "international",
+    description: "A day to recognize the importance of plumbing",
+    article: {
+      origins:
+        "World Plumbing Day was established to raise awareness about the vital role plumbing plays in public health and safety. It recognizes the importance of clean water and sanitation systems.",
+      modernCelebrations:
+        "Organizations highlight the importance of plumbing infrastructure, people learn about water conservation, and communities discuss public health and sanitation.",
+      educationalValue:
+        "This day teaches about public health, infrastructure, and the importance of clean water. It promotes understanding of essential services and environmental conservation.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#87CEEB",
+      accent: "#FFD700",
+    },
+    emojis: ["🚰", "💧", "🔧", "🏠", "🚿"],
+    keywords: ["plumbing day", "water", "sanitation", "infrastructure"],
+  },
+  {
+    date: "03-12",
+    name: "National Plant a Flower Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to encourage planting flowers and gardening",
+    article: {
+      origins:
+        "National Plant a Flower Day encourages people to plant flowers and appreciate the beauty of nature. It promotes gardening as a therapeutic and environmentally beneficial activity.",
+      modernCelebrations:
+        "People plant flowers, start gardens, and learn about horticulture. Many communities organize planting events and educational programs about gardening.",
+      educationalValue:
+        "This day teaches about horticulture, environmental stewardship, and the benefits of connecting with nature. It promotes understanding of plant life and ecosystem health.",
+    },
+    colors: {
+      primary: "#FF69B4",
+      secondary: "#228B22",
+      accent: "#FFD700",
+    },
+    emojis: ["🌸", "🌺", "🌻", "🌷", "🌹"],
+    keywords: ["plant a flower day", "gardening", "nature", "flowers"],
+  },
+  {
+    date: "03-13",
+    name: "National Coconut Torte Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the delicious coconut torte dessert",
+    article: {
+      origins:
+        "National Coconut Torte Day celebrates the rich and flavorful coconut torte, a dessert that showcases the versatility of coconut in baking. Coconut has been used in desserts worldwide for centuries.",
+      modernCelebrations:
+        "People enjoy coconut tortes, learn about coconut-based desserts, and discover the culinary uses of coconut. Many bakeries offer special coconut torte varieties.",
+      educationalValue:
+        "This day teaches about culinary traditions, tropical ingredients, and the diversity of dessert making. It promotes appreciation for international cuisine and baking techniques.",
+    },
+    colors: {
+      primary: "#8B4513",
+      secondary: "#FFD700",
+      accent: "#FFFFFF",
+    },
+    emojis: ["🥥", "🍰", "🎂", "🥥", "🍽️"],
+    keywords: ["coconut torte day", "dessert", "baking", "coconut"],
+  },
+  {
+    date: "03-14",
+    name: "Pi Day",
+    country: "Global",
+    category: "international",
+    description: "A day to celebrate the mathematical constant π",
+    article: {
+      origins:
+        "Pi Day celebrates the mathematical constant π (pi), which represents the ratio of a circle's circumference to its diameter. The date 3/14 corresponds to the first three digits of π (3.14).",
+      modernCelebrations:
+        "Students and mathematicians celebrate with pi-themed activities, people eat pie, and educational institutions hold math competitions and demonstrations.",
+      educationalValue:
+        "This day teaches about mathematics, geometry, and the importance of mathematical constants. It promotes STEM education and appreciation for mathematical concepts.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFD700",
+      accent: "#FF69B4",
+    },
+    emojis: ["🥧", "📐", "🔢", "📊", "🎯"],
+    keywords: ["pi day", "mathematics", "geometry", "education"],
+  },
+  {
+    date: "03-15",
+    name: "World Consumer Rights Day",
+    country: "Global",
+    category: "international",
+    description: "A day to promote consumer rights and protection",
+    article: {
+      origins:
+        "World Consumer Rights Day was established to promote consumer rights and protection worldwide. It raises awareness about consumer issues and the importance of fair business practices.",
+      modernCelebrations:
+        "Organizations hold consumer education events, people learn about their rights, and communities discuss fair trade and consumer protection.",
+      educationalValue:
+        "This day teaches about consumer rights, financial literacy, and responsible consumerism. It promotes understanding of fair business practices and economic education.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFD700",
+      accent: "#228B22",
+    },
+    emojis: ["🛒", "💳", "📋", "⚖️", "🤝"],
+    keywords: ["consumer rights day", "consumerism", "rights", "protection"],
+  },
+  {
+    date: "03-16",
+    name: "National Panda Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate and protect giant pandas",
+    article: {
+      origins:
+        "National Panda Day raises awareness about giant pandas and their conservation. These beloved animals are symbols of wildlife conservation and environmental protection efforts.",
+      modernCelebrations:
+        "Zoos hold panda-themed events, people learn about panda conservation, and communities support wildlife protection organizations.",
+      educationalValue:
+        "This day teaches about wildlife conservation, endangered species, and environmental protection. It promotes understanding of biodiversity and conservation efforts.",
+    },
+    colors: {
+      primary: "#000000",
+      secondary: "#FFFFFF",
+      accent: "#228B22",
+    },
+    emojis: ["🐼", "🎋", "🌿", "🐾", "🐼"],
+    keywords: ["panda day", "conservation", "wildlife", "endangered species"],
+  },
+  {
+    date: "03-17",
+    name: "St. Patrick's Day",
+    country: "Ireland",
+    category: "cultural",
+    description: "Celebrate Irish culture and heritage",
+    article: {
+      origins:
+        "St. Patrick's Day commemorates the death of Saint Patrick, the patron saint of Ireland. It is celebrated on March 17th, marking the anniversary of his death in 461 AD.",
+      modernCelebrations:
+        "People wear green, attend parades, and celebrate Irish culture. Many Irish communities organize cultural events, and organizations hold educational programs about Irish heritage.",
+      educationalValue:
+        "This day teaches about Irish culture, history, and the importance of preserving cultural traditions. It promotes appreciation for Irish heritage and cultural diversity.",
+    },
+    colors: {
+      primary: "#228B22",
+      secondary: "#FFD700",
+      accent: "#000000",
+    },
+    emojis: ["🍀", "🇮🇪", "🎉", "🎭", "🎪"],
+    keywords: ["st patrick", "ireland", "green", "shamrock"],
+  },
   {
     date: "04-01",
     name: "April Fools' Day",
@@ -1755,6 +2324,265 @@ export const globalHolidays: Holiday[] = [
     emojis: ["🎆", "🎊", "🎉", "🕐", "✨"],
     keywords: ["new year's eve", "celebration", "fireworks", "countdown"],
   },
+  {
+    date: "03-21",
+    name: "World Poetry Day",
+    country: "Global",
+    category: "international",
+    description: "A day to celebrate poetry and linguistic diversity",
+    article: {
+      origins:
+        "World Poetry Day was proclaimed by UNESCO to celebrate poetry as a form of artistic expression and to promote linguistic diversity through poetic traditions.",
+      modernCelebrations:
+        "People read and write poetry, schools hold poetry workshops, and communities celebrate the power of words and creative expression.",
+      educationalValue:
+        "This day teaches about literature, creative expression, and the power of language. It promotes literacy, cultural appreciation, and artistic creativity.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFD700",
+      accent: "#FF69B4",
+    },
+    emojis: ["📝", "✍️", "📚", "🎭", "💭"],
+    keywords: [
+      "world poetry day",
+      "poetry",
+      "literature",
+      "creative expression",
+    ],
+  },
+  {
+    date: "03-22",
+    name: "World Water Day",
+    country: "Global",
+    category: "international",
+    description: "A day to raise awareness about water conservation",
+    article: {
+      origins:
+        "World Water Day was established by the United Nations to raise awareness about the importance of freshwater and advocate for sustainable water management.",
+      modernCelebrations:
+        "Organizations hold water conservation events, people learn about water scarcity, and communities discuss sustainable water practices.",
+      educationalValue:
+        "This day teaches about environmental conservation, water resources, and sustainability. It promotes understanding of global water challenges and conservation efforts.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#87CEEB",
+      accent: "#00CED1",
+    },
+    emojis: ["💧", "🌊", "🚰", "🌍", "💙"],
+    keywords: [
+      "world water day",
+      "water conservation",
+      "environment",
+      "sustainability",
+    ],
+  },
+  {
+    date: "03-23",
+    name: "National Puppy Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate puppies and promote adoption",
+    article: {
+      origins:
+        "National Puppy Day was created to celebrate the unconditional love and joy that puppies bring to our lives and to encourage adoption from shelters.",
+      modernCelebrations:
+        "People spend time with puppies, support animal shelters, and learn about responsible pet ownership. Many communities hold adoption events.",
+      educationalValue:
+        "This day teaches about animal welfare, responsible pet ownership, and the human-animal bond. It promotes compassion and care for animals.",
+    },
+    colors: {
+      primary: "#FFA500",
+      secondary: "#FFD700",
+      accent: "#FF69B4",
+    },
+    emojis: ["🐕", "🐾", "💕", "🎾", "🐕"],
+    keywords: ["puppy day", "pets", "animals", "adoption"],
+  },
+  {
+    date: "03-24",
+    name: "World Tuberculosis Day",
+    country: "Global",
+    category: "international",
+    description: "A day to raise awareness about tuberculosis",
+    article: {
+      origins:
+        "World Tuberculosis Day commemorates the discovery of the TB bacterium by Dr. Robert Koch in 1882. It raises awareness about tuberculosis prevention and treatment.",
+      modernCelebrations:
+        "Health organizations hold awareness campaigns, people learn about TB prevention, and communities discuss public health issues.",
+      educationalValue:
+        "This day teaches about public health, disease prevention, and global health challenges. It promotes understanding of infectious diseases and healthcare.",
+    },
+    colors: {
+      primary: "#FF0000",
+      secondary: "#FFFFFF",
+      accent: "#4169E1",
+    },
+    emojis: ["🏥", "💊", "🔬", "🌍", "❤️"],
+    keywords: [
+      "tuberculosis day",
+      "health",
+      "disease prevention",
+      "public health",
+    ],
+  },
+  {
+    date: "03-25",
+    name: "National Waffle Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the delicious waffle breakfast",
+    article: {
+      origins:
+        "National Waffle Day celebrates the beloved breakfast food that has been enjoyed for centuries. Waffles represent comfort food and the joy of breakfast traditions.",
+      modernCelebrations:
+        "People make waffles, try different toppings, and enjoy breakfast with family and friends. Many restaurants offer special waffle menus.",
+      educationalValue:
+        "This day teaches about breakfast culture, culinary traditions, and the importance of family meals. It promotes appreciation for simple pleasures and food traditions.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#8B4513",
+      accent: "#FFA500",
+    },
+    emojis: ["🧇", "🍯", "🍓", "🥛", "🧇"],
+    keywords: ["waffle day", "breakfast", "comfort food", "morning meals"],
+  },
+  {
+    date: "03-26",
+    name: "National Spinach Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the nutritious green vegetable",
+    article: {
+      origins:
+        "National Spinach Day celebrates the nutritious leafy green vegetable that has been cultivated for thousands of years. Spinach is known for its health benefits and versatility.",
+      modernCelebrations:
+        "People cook with spinach, learn about its nutritional benefits, and discover new spinach recipes. Many promote healthy eating habits.",
+      educationalValue:
+        "This day teaches about nutrition, healthy eating, and the importance of vegetables in our diet. It promotes understanding of food and health.",
+    },
+    colors: {
+      primary: "#228B22",
+      secondary: "#32CD32",
+      accent: "#FFD700",
+    },
+    emojis: ["🥬", "🌿", "🥗", "💚", "🥬"],
+    keywords: ["spinach day", "vegetables", "nutrition", "healthy eating"],
+  },
+  {
+    date: "03-27",
+    name: "World Theatre Day",
+    country: "Global",
+    category: "international",
+    description: "A day to celebrate the art of theatre",
+    article: {
+      origins:
+        "World Theatre Day was established by the International Theatre Institute to celebrate the art of theatre and its contribution to cultural exchange and understanding.",
+      modernCelebrations:
+        "Theatres hold special performances, people attend plays, and communities celebrate dramatic arts. Many schools organize theatre activities.",
+      educationalValue:
+        "This day teaches about performing arts, cultural expression, and the power of storytelling. It promotes appreciation for dramatic arts and creativity.",
+    },
+    colors: {
+      primary: "#FF69B4",
+      secondary: "#FFD700",
+      accent: "#4169E1",
+    },
+    emojis: ["🎭", "🎪", "🎨", "🎬", "🎭"],
+    keywords: ["world theatre day", "theatre", "performing arts", "drama"],
+  },
+  {
+    date: "03-28",
+    name: "National Something on a Stick Day",
+    country: "USA",
+    category: "cultural",
+    description: "A fun day to enjoy foods served on sticks",
+    article: {
+      origins:
+        "National Something on a Stick Day celebrates the fun and convenient way of serving food on sticks. This includes everything from popsicles to kebabs to corn dogs.",
+      modernCelebrations:
+        "People enjoy various foods on sticks, get creative with food presentation, and have fun with this playful food tradition.",
+      educationalValue:
+        "This day teaches about food presentation, culinary creativity, and the fun aspects of eating. It promotes creativity in food preparation and enjoyment.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      accent: "#FF69B4",
+    },
+    emojis: ["🍡", "🍢", "🍭", "🍖", "🍡"],
+    keywords: ["something on a stick day", "food", "creativity", "fun"],
+  },
+  {
+    date: "03-29",
+    name: "National Lemon Chiffon Cake Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the light and fluffy lemon chiffon cake",
+    article: {
+      origins:
+        "National Lemon Chiffon Cake Day celebrates the delicate and airy lemon chiffon cake, known for its light texture and refreshing citrus flavor.",
+      modernCelebrations:
+        "People bake lemon chiffon cakes, enjoy citrus desserts, and learn about baking techniques. Many bakeries offer special lemon chiffon varieties.",
+      educationalValue:
+        "This day teaches about baking techniques, citrus flavors, and the art of cake making. It promotes appreciation for culinary skills and dessert traditions.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      accent: "#FFFFFF",
+    },
+    emojis: ["🍰", "🍋", "🎂", "🍰", "🍽️"],
+    keywords: ["lemon chiffon cake day", "dessert", "baking", "citrus"],
+  },
+  {
+    date: "03-30",
+    name: "National Doctor's Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to honor and appreciate doctors",
+    article: {
+      origins:
+        "National Doctor's Day was established to recognize the contributions of physicians to individual lives and communities. It celebrates the dedication and skill of medical professionals.",
+      modernCelebrations:
+        "People thank their doctors, hospitals hold appreciation events, and communities recognize the importance of healthcare professionals.",
+      educationalValue:
+        "This day teaches about healthcare, medical professions, and the importance of doctors in society. It promotes appreciation for healthcare workers and medical science.",
+    },
+    colors: {
+      primary: "#4169E1",
+      secondary: "#FFFFFF",
+      accent: "#FF0000",
+    },
+    emojis: ["👨‍⚕️", "👩‍⚕️", "🏥", "💊", "🩺"],
+    keywords: ["doctor's day", "healthcare", "medical", "appreciation"],
+  },
+  {
+    date: "03-31",
+    name: "National Crayon Day",
+    country: "USA",
+    category: "cultural",
+    description: "A day to celebrate the colorful world of crayons",
+    article: {
+      origins:
+        "National Crayon Day celebrates the beloved art supply that has inspired creativity in children and adults for generations. Crayons represent the joy of artistic expression.",
+      modernCelebrations:
+        "People draw with crayons, organize art activities, and celebrate the creativity that crayons inspire. Many schools hold crayon art events.",
+      educationalValue:
+        "This day teaches about art, creativity, and the importance of artistic expression. It promotes imagination and the joy of creating.",
+    },
+    colors: {
+      primary: "#FFD700",
+      secondary: "#FF69B4",
+      accent: "#4169E1",
+    },
+    emojis: ["🖍️", "🎨", "📝", "🎭", "🖍️"],
+    keywords: ["crayon day", "art", "creativity", "drawing"],
+  },
+
+  // 四月
 ];
 
 // 获取指定日期的节日
