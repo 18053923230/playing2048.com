@@ -16,38 +16,41 @@ import { getHolidayByTheme } from "@/lib/game/holidayThemes";
 // 主题配置
 const themeConfigs = {
   cupcakes: {
-    name: "2048 Cupcakes",
-    description: "The most delicious version of 2048",
+    name: "🎮 2048 Cupcakes",
+    description: "The most delicious version of 2048 - Play for FREE!",
     emoji: "🧁",
     seo: {
-      title: "2048 Cupcakes - Play Online Free",
+      title: "🎮 2048 Cupcakes - Play Online Free | No Download Required",
       description:
-        "Play 2048 Cupcakes online for free! The most delicious version of 2048 with sweet treats and colorful cupcakes.",
-      keywords: "2048 cupcakes, puzzle game, sweet treats, online game",
+        "🎮 Play 2048 Cupcakes online for FREE! The most delicious version of 2048 with sweet treats and colorful cupcakes. No download, no registration - play instantly!",
+      keywords:
+        "2048 cupcakes, free puzzle game, online 2048, brain games, sweet treats, free online games",
       canonical: "https://playing2048.com/game/cupcakes",
     },
   },
   christmas: {
-    name: "2048 Christmas",
-    description: "Holiday-themed puzzle fun",
+    name: "🎮 2048 Christmas",
+    description: "Holiday-themed puzzle fun - Play for FREE!",
     emoji: "🎄",
     seo: {
-      title: "2048 Christmas - Play Online Free",
+      title: "🎮 2048 Christmas - Play Online Free | Holiday Puzzle Game",
       description:
-        "Play 2048 Christmas online for free! Celebrate the holidays with festive puzzle fun.",
-      keywords: "2048 christmas, holiday game, puzzle, online game",
+        "🎮 Play 2048 Christmas online for FREE! Celebrate the holidays with festive puzzle fun. No download, no registration - play instantly!",
+      keywords:
+        "2048 christmas, free puzzle game, holiday game, online 2048, brain games, free online games",
       canonical: "https://playing2048.com/game/christmas",
     },
   },
   halloween: {
-    name: "2048 Halloween",
-    description: "Spooky puzzle adventure",
+    name: "🎮 2048 Halloween",
+    description: "Spooky puzzle adventure - Play for FREE!",
     emoji: "🎃",
     seo: {
-      title: "2048 Halloween - Play Online Free",
+      title: "🎮 2048 Halloween - Play Online Free | Spooky Puzzle Game",
       description:
-        "Play 2048 Halloween online for free! Spooky puzzle adventure with ghosts and pumpkins.",
-      keywords: "2048 halloween, spooky game, puzzle, online game",
+        "🎮 Play 2048 Halloween online for FREE! Spooky puzzle adventure with ghosts and pumpkins. No download, no registration - play instantly!",
+      keywords:
+        "2048 halloween, free puzzle game, spooky game, online 2048, brain games, free online games",
       canonical: "https://playing2048.com/game/halloween",
     },
   },

@@ -1,10 +1,11 @@
 export const seoConfig = {
   home: {
-    title: "Play 2048 Cupcakes Online - Free Puzzle Game | Playing2048.com",
+    title:
+      "🎮 Play 2048 Online - Free Puzzle Game | Daily Holiday Themes | Playing2048.com",
     description:
-      "Play 2048 Cupcakes online for free! Join numbers and get to the winning tile. Customize your base number and difficulty for endless fun. No download required.",
+      "🎮 Play 2048 online for FREE! The most addictive puzzle game with daily holiday themes. Merge tiles to reach 2048 and beyond. No download, no registration - play instantly! Challenge your brain with our unique holiday-themed versions.",
     keywords:
-      "2048 cupcakes, play 2048 cupcakes, 2048 cupcakes online, free 2048 game, puzzle game",
+      "2048 game, free puzzle game, online 2048, brain games, strategy games, free online games, puzzle games, merge tiles, addictive games, daily games, holiday games, play 2048 online",
     canonical: "https://playing2048.com",
   },
   cupcakes: {

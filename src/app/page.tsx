@@ -19,13 +19,20 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-8">
           <header className="text-center mb-12">
             <h1 className="text-6xl font-bold mb-4">
-              <span className="text-red-500">20</span>
+              <span className="text-red-500">🎮 20</span>
               <span className="text-teal-500">48</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Join numbers and get to the winning tile! Customize your base
-              number and difficulty for endless fun.
+              The most addictive puzzle game with daily holiday themes!
+              Challenge your brain, merge tiles, and reach 2048. Play for FREE -
+              no download required!
             </p>
+            <div className="mt-6">
+              <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                <span className="mr-2">✅</span>
+                Free to Play • No Download • No Registration
+              </div>
+            </div>
           </header>
 
           {/* 今日节日 */}
