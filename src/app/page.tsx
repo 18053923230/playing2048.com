@@ -60,9 +60,12 @@ export default function HomePage() {
               <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                 <div className="text-4xl mb-4">🧁</div>
                 <h2 className="text-2xl font-bold mb-2">Cupcakes</h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-2">
                   The most delicious version of 2048
                 </p>
+                <div className="text-sm text-blue-600 font-medium">
+                  ✨ New Feature: Personalized Color Themes
+                </div>
               </div>
             </Link>
 
@@ -85,6 +88,75 @@ export default function HomePage() {
 
           {/* 节日日历 */}
           <HolidayCalendar />
+
+          {/* New Feature Introduction */}
+          <div className="mt-12 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg shadow-md p-8 max-w-6xl mx-auto border border-pink-200">
+            <h2 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+              🎨 New Feature: Personalized Color Themes
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Choose Your Favorite Color
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Now you can choose your favorite color theme for the game! The
+                  game area and icon introduction area will use your selected
+                  color, creating a unique visual experience through different
+                  transparencies and shades.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    24 beautiful colors available
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Game area changes color in real-time
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Icon background intelligent gradient
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Smooth transition animation effects
+                  </li>
+                </ul>
+                <div className="mt-6">
+                  <Link href="/game/cupcakes">
+                    <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
+                      Experience Now 🎨
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="grid grid-cols-6 gap-2">
+                  {[
+                    "#FF6B6B",
+                    "#4ECDC4",
+                    "#45B7D1",
+                    "#96CEB4",
+                    "#FFEAA7",
+                    "#DDA0DD",
+                    "#FFB347",
+                    "#98D8C8",
+                    "#F7DC6F",
+                    "#BB8FCE",
+                    "#85C1E9",
+                    "#F8C471",
+                  ].map((color, index) => (
+                    <div
+                      key={index}
+                      className="w-8 h-8 rounded-full shadow-md"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* 节日知识介绍 */}
           <div className="mt-12 bg-white rounded-lg shadow-md p-6 max-w-6xl mx-auto">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { getThemeConfig } from "@/lib/game/gameThemes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -34,6 +34,7 @@ const colorOptions = [
   "#16A085", // 深青色
   "#8E44AD", // 深紫色
   "#D35400", // 深橙红色
+  "#FF69B4", // 热粉色
 ];
 
 // 生成颜色的不同透明度
@@ -100,7 +101,7 @@ export const GameTileLegend: React.FC<GameTileLegendProps> = ({
 
         {/* 颜色选择器 */}
         <div className="mt-6">
-          <h3 className="text-lg font-semibold mb-3">选择主题颜色</h3>
+          <h3 className="text-lg font-semibold mb-3">Choose a theme color</h3>
           <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-12 gap-2">
             {colorOptions.map((color) => (
               <button
@@ -112,12 +113,13 @@ export const GameTileLegend: React.FC<GameTileLegendProps> = ({
                 }`}
                 style={{ backgroundColor: color }}
                 onClick={() => handleColorSelect(color)}
-                title={`选择 ${color} 作为主题色`}
+                title={`Choose ${color} as theme color`}
               />
             ))}
           </div>
           <p className="text-sm text-gray-600 mt-2 text-center">
-            点击颜色圆点来改变游戏主题色，所有图标和游戏区域将使用该颜色的不同深浅
+            Click on the color circle to change the game theme color, all icons
+            and game areas will use different shades of that color
           </p>
         </div>
       </CardContent>

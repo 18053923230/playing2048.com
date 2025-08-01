@@ -15,12 +15,14 @@ interface GameControlsProps {
   onNewGame: () => void;
   onReset: () => void;
   onMove: (direction: Direction) => void;
+  selectedColor?: string;
 }
 
 export const GameControls: React.FC<GameControlsProps> = ({
   onNewGame,
   onReset,
   onMove,
+  selectedColor = "#FF6B6B",
 }) => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -58,21 +60,49 @@ export const GameControls: React.FC<GameControlsProps> = ({
 
   return (
     <div className="space-y-4">
-      <Card>
+      <Card
+        className="transition-all duration-300"
+        style={{
+          borderColor: `${selectedColor}30`,
+          backgroundColor: `${selectedColor}05`,
+        }}
+      >
         <CardHeader className="pb-2">
           <CardTitle className="text-lg">Controls</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
-          <Button onClick={onNewGame} className="w-full">
+          <Button
+            onClick={onNewGame}
+            className="w-full transition-all duration-300"
+            style={{
+              backgroundColor: selectedColor,
+              borderColor: selectedColor,
+              color: "white",
+            }}
+          >
             New Game
           </Button>
-          <Button onClick={onReset} variant="outline" className="w-full">
+          <Button
+            onClick={onReset}
+            variant="outline"
+            className="w-full transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
             Reset
           </Button>
         </CardContent>
       </Card>
 
-      <Card>
+      <Card
+        className="transition-all duration-300"
+        style={{
+          borderColor: `${selectedColor}30`,
+          backgroundColor: `${selectedColor}05`,
+        }}
+      >
         <CardHeader className="pb-2">
           <CardTitle className="text-lg">Direction Keys</CardTitle>
         </CardHeader>
@@ -83,7 +113,11 @@ export const GameControls: React.FC<GameControlsProps> = ({
               onClick={() => onMove("up")}
               variant="outline"
               size="sm"
-              className="h-12"
+              className="h-12 transition-all duration-300"
+              style={{
+                borderColor: `${selectedColor}60`,
+                color: selectedColor,
+              }}
             >
               <ArrowUpIcon className="h-4 w-4" />
             </Button>
@@ -92,18 +126,29 @@ export const GameControls: React.FC<GameControlsProps> = ({
               onClick={() => onMove("left")}
               variant="outline"
               size="sm"
-              className="h-12"
+              className="h-12 transition-all duration-300"
+              style={{
+                borderColor: `${selectedColor}60`,
+                color: selectedColor,
+              }}
             >
               <ArrowLeftIcon className="h-4 w-4" />
             </Button>
-            <div className="h-12 flex items-center justify-center text-xs text-gray-500">
+            <div
+              className="h-12 flex items-center justify-center text-xs transition-all duration-300"
+              style={{ color: `${selectedColor}80` }}
+            >
               WASD
             </div>
             <Button
               onClick={() => onMove("right")}
               variant="outline"
               size="sm"
-              className="h-12"
+              className="h-12 transition-all duration-300"
+              style={{
+                borderColor: `${selectedColor}60`,
+                color: selectedColor,
+              }}
             >
               <ArrowRightIcon className="h-4 w-4" />
             </Button>
@@ -112,7 +157,11 @@ export const GameControls: React.FC<GameControlsProps> = ({
               onClick={() => onMove("down")}
               variant="outline"
               size="sm"
-              className="h-12"
+              className="h-12 transition-all duration-300"
+              style={{
+                borderColor: `${selectedColor}60`,
+                color: selectedColor,
+              }}
             >
               <ArrowDownIcon className="h-4 w-4" />
             </Button>

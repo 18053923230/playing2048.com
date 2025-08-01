@@ -20,7 +20,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const boardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleKeyDown = (_event: KeyboardEvent) => {
+    const handleKeyDown = () => {
       // 键盘事件处理将在GameControls中实现
     };
 

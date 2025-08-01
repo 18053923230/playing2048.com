@@ -10,7 +10,7 @@ import { GameOverlay } from "@/components/game/GameOverlay";
 import { GameTileLegend } from "@/components/game/GameTileLegend";
 import { Game2048 } from "@/lib/game/gameLogic";
 import { GameState, Direction } from "@/types/game";
-import { getThemeConfig } from "@/lib/game/gameThemes";
+
 import { getHolidayByTheme } from "@/lib/game/holidayThemes";
 
 // 主题配置
@@ -195,11 +195,13 @@ export default function GamePage() {
                   score={gameState.score}
                   bestScore={gameState.bestScore}
                   moves={gameState.moves}
+                  selectedColor={selectedColor}
                 />
                 <GameControls
                   onNewGame={handleNewGame}
                   onReset={handleReset}
                   onMove={handleMove}
+                  selectedColor={selectedColor}
                 />
               </div>
 
