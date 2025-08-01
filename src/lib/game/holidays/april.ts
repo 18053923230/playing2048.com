@@ -110,7 +110,7 @@ export const aprilHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#8B4513",
     },
-    emojis: ["🍕", "🧀", "🍅", "🇺🇸", "🍕"],
+    emojis: ["🍕", "🍽️", "🧀", "🥓", "🍅"],
     keywords: ["deep dish pizza", "chicago", "pizza", "cuisine"],
   },
   {
@@ -308,7 +308,7 @@ export const aprilHolidays: Holiday[] = [
       secondary: "#87CEEB",
       accent: "#FFD700",
     },
-    emojis: ["🐬", "🌊", "🐋", "🌊", "🐬"],
+    emojis: ["🐬", "🌊", "🐋", "🌊🐬", "🐋🐬"],
     keywords: ["dolphin day", "marine life", "ocean", "conservation"],
   },
   {
@@ -418,7 +418,7 @@ export const aprilHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["🧄", "🍽️", "🌿", "💪", "🧄"],
+    emojis: ["🧄", "🍽️", "🌿", "💪", "🌿🧄"],
     keywords: ["garlic day", "cooking", "health", "herbs"],
   },
   {
@@ -440,7 +440,7 @@ export const aprilHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#4169E1",
     },
-    emojis: ["👥", "🪞", "📸", "🎭", "✨"],
+    emojis: ["👥", "💪", "📸", "🎭", "✨"],
     keywords: ["look alike day", "resemblance", "genetics", "fun"],
   },
   {
@@ -462,7 +462,7 @@ export const aprilHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["☕", "🫖", "🍵", "🍰", "☕"],
+    emojis: ["☕", "💪", "🍵", "🍰", "💪☕"],
     keywords: ["tea day", "british culture", "afternoon tea", "tradition"],
   },
   {

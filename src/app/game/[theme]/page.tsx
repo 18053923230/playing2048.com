@@ -61,6 +61,7 @@ export default function GamePage() {
   const themeName = params.theme as string;
   const [game, setGame] = useState<Game2048 | null>(null);
   const [gameState, setGameState] = useState<GameState | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string>("#FF6B6B");
 
   // 检查是否是节日主题
   const holiday = getHolidayByTheme(themeName);
@@ -112,6 +113,10 @@ export default function GamePage() {
     setGameState(game.getState());
   };
 
+  const handleColorChange = (color: string) => {
+    setSelectedColor(color);
+  };
+
   if (!gameState) {
     return <div>Loading...</div>;
   }
@@ -154,7 +159,7 @@ export default function GamePage() {
                   </h1>
                   <p className="text-gray-600 mb-4">{holiday.description}</p>
                   <div className="flex justify-center gap-2 mb-4">
-                    {holiday.emojis.map((emoji, index) => (
+                    {holiday.emojis.map((emoji: string, index: number) => (
                       <span key={index} className="text-2xl">
                         {emoji}
                       </span>
@@ -200,8 +205,16 @@ export default function GamePage() {
 
               {/* 游戏棋盘 */}
               <div className="md:col-span-2 flex flex-col items-center max-w-4xl">
-                <GameBoard board={gameState.board} theme={themeName} />
-                <GameTileLegend theme={themeName} />
+                <GameBoard
+                  board={gameState.board}
+                  theme={themeName}
+                  selectedColor={selectedColor}
+                />
+                <GameTileLegend
+                  theme={themeName}
+                  selectedColor={selectedColor}
+                  onColorChange={handleColorChange}
+                />
               </div>
             </div>
 

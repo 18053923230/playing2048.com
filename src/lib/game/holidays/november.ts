@@ -43,7 +43,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FF69B4",
     },
-    emojis: ["🥚", "🍳", "🥚", "🥚", "🥚"],
+    emojis: ["🥚", "🍳", "🍽️", "🥗", "🧂"],
     keywords: ["deviled egg day", "deviled eggs", "appetizers", "party food"],
   },
   {
@@ -65,7 +65,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["🥪", "🍞", "🥪", "🥪", "🥪"],
+    emojis: ["🥪", "🍞", "🥗", "🍽️", "🥒"],
     keywords: ["sandwich day", "sandwiches", "lunch", "convenience"],
   },
   {
@@ -87,7 +87,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#4169E1",
     },
-    emojis: ["🍬", "🍭", "🍬", "🍬", "🍬"],
+    emojis: ["🍬", "🍭", "🍫", "🧁", "🍰"],
     keywords: ["candy day", "candy", "sweets", "treats"],
   },
   {
@@ -109,7 +109,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#2F4F4F",
       accent: "#FFD700",
     },
-    emojis: ["🔥", "🎆", "🔥", "🎆", "🔥"],
+    emojis: ["🔥", "🎆", "🎇", "🎭", "🧨"],
     keywords: ["guy fawkes night", "bonfire", "fireworks", "british"],
   },
   {
@@ -131,7 +131,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FF0000",
       accent: "#228B22",
     },
-    emojis: ["🌮", "🌯", "🌮", "🌮", "🌮"],
+    emojis: ["🌮", "🧀", "🥑", "🌶️", "🍅"],
     keywords: ["nachos day", "nachos", "mexican", "snacks"],
   },
   {
@@ -153,7 +153,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍫", "🍪", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🌰", "🥜", "🍬", "🍪"],
     keywords: [
       "bittersweet chocolate day",
       "chocolate",
@@ -180,7 +180,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["☕", "🫖", "☕", "🫖", "☕"],
+    emojis: ["☕", "🥛", "🍪", "🍫", "🧁"],
     keywords: ["cappuccino day", "cappuccino", "coffee", "italian"],
   },
   {
@@ -202,7 +202,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🥓", "🍳", "🥓", "🥓", "🥓"],
+    emojis: ["🥓", "🍳", "🥞", "🥯", "🍞"],
     keywords: ["scrapple day", "scrapple", "pennsylvania", "traditional"],
   },
   {
@@ -224,7 +224,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🧁", "🍰", "🧁", "🧁", "🧁"],
+    emojis: ["🧁", "🍰", "🎂", "🧇", "🍦"],
     keywords: ["vanilla cupcake day", "cupcakes", "vanilla", "desserts"],
   },
   {
@@ -246,7 +246,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#000080",
     },
-    emojis: ["🇺🇸", "🎖️", "🎖️", "🎖️", "🇺🇸"],
+    emojis: ["🇺🇸", "🪖", "🎖️", "🦅", "🫡"],
     keywords: ["veterans day", "veterans", "military", "service"],
   },
   {
@@ -268,7 +268,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["🍕", "🧀", "🍕", "🍕", "🍕"],
+    emojis: ["🍕", "🫑", "🍄", "🌶️", "🧅"],
     keywords: ["pizza with works day", "pizza", "toppings", "indulgence"],
   },
   {
@@ -290,7 +290,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍮", "🍰", "🍮", "🍮", "🍮"],
+    emojis: ["🍮", "🌽", "🍯", "🥄", "🥧"],
     keywords: [
       "indian pudding day",
       "indian pudding",
@@ -317,7 +317,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🥒", "🥬", "🥒", "🥒", "🥒"],
+    emojis: ["🥒", "🥬", "🧄", "🧅", "🥗"],
     keywords: ["pickle day", "pickles", "preservation", "vegetables"],
   },
   {
@@ -339,7 +339,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#4169E1",
       accent: "#FFD700",
     },
-    emojis: ["🧹", "🧽", "🧹", "🧹", "🧹"],
+    emojis: ["🧹", "🧽", "🗑️", "🥫", "🥕"],
     keywords: [
       "clean refrigerator day",
       "cleaning",
@@ -366,7 +366,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍔", "🍟", "🍔", "🍔", "🍔"],
+    emojis: ["🍔", "🍟", "🌭", "🥤", "🍕"],
     keywords: ["fast food day", "fast food", "convenience", "modern"],
   },
   {
@@ -388,7 +388,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFFFFF",
     },
-    emojis: ["🍞", "🥖", "🍞", "🍞", "🍞"],
+    emojis: ["🍞", "🥖", "🥨", "🥯", "🍠"],
     keywords: ["homemade bread day", "bread", "baking", "homemade"],
   },
   {
@@ -410,7 +410,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFD700",
     },
-    emojis: ["🍎", "🍏", "🍎", "🍎", "🍎"],
+    emojis: ["🍎", "🍏", "🍂", "🍁", "🥤"],
     keywords: ["apple cider day", "apple cider", "autumn", "seasonal"],
   },
   {
@@ -432,7 +432,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#4169E1",
     },
-    emojis: ["🥤", "🍹", "🥤", "🥤", "🥤"],
+    emojis: ["🥤", "🍹", "🧃", "🥛", "🧊"],
     keywords: ["carbonated beverage day", "soda", "caffeine", "refreshment"],
   },
   {
@@ -454,7 +454,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍫", "🍪", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🥜", "🍬", "🍯", "🍪"],
     keywords: ["peanut butter fudge day", "fudge", "peanut butter", "candy"],
   },
   {
@@ -476,7 +476,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍪", "🍰", "🍪", "🍪", "🍪"],
+    emojis: ["🍪", "🎄", "🍬", "🧁", "🍰"],
     keywords: ["gingerbread cookie day", "gingerbread", "cookies", "holiday"],
   },
   {
@@ -498,7 +498,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#228B22",
     },
-    emojis: ["🫐", "🫐", "🫐", "🫐", "🫐"],
+    emojis: ["🫐", "🍊", "🍋", "🍎", "🍽️"],
     keywords: [
       "cranberry relish day",
       "cranberries",
@@ -525,7 +525,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["☕", "🫖", "☕", "🫖", "☕"],
+    emojis: ["☕", "🍫", "🥄", "🍪", "🧁"],
     keywords: ["espresso day", "espresso", "coffee", "italian"],
   },
   {
@@ -547,7 +547,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🐟", "🐠", "🐟", "🐟", "🐟"],
+    emojis: ["🐟", "🐠", "🦞", "🦐", "🍋"],
     keywords: ["sardines day", "sardines", "seafood", "preserved"],
   },
   {
@@ -569,7 +569,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🍨", "🍦", "🍨", "🍨", "🍨"],
+    emojis: ["🍨", "🍦", "🍓", "🥣", "🍒"],
     keywords: ["parfait day", "parfaits", "desserts", "healthy"],
   },
   {
@@ -591,7 +591,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍰", "🎂", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🎂", "🧁", "🍮", "🍫"],
     keywords: ["cake day", "cakes", "desserts", "celebration"],
   },
   {
@@ -613,7 +613,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍰", "🎂", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🥧", "🍮", "🍫", "🍦"],
     keywords: ["bavarian cream pie day", "bavarian cream", "pie", "desserts"],
   },
   {
@@ -635,7 +635,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFFFFF",
     },
-    emojis: ["🍞", "🥖", "🍞", "🍞", "🍞"],
+    emojis: ["🍞", "🥖", "🥚", "🥛", "🍯"],
     keywords: ["french toast day", "french toast", "breakfast", "eggs"],
   },
   {
@@ -657,7 +657,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FF69B4",
     },
-    emojis: ["🍋", "🍋", "🍋", "🍋", "🍋"],
+    emojis: ["🍋", "🍰", "🍮", "🍊", "🍯"],
     keywords: ["lemon cream pie day", "lemon", "cream pie", "citrus"],
   },
   {
@@ -679,7 +679,7 @@ export const novemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🍮", "🍰", "🍮", "🍮", "🍮"],
+    emojis: ["🍮", "🍫", "🍰", "🍦", "🍓"],
     keywords: ["mousse day", "mousse", "desserts", "sophisticated"],
   },
 ];

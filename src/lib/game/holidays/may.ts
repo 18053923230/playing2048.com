@@ -43,7 +43,7 @@ export const mayHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍫", "🍪", "🍰", "🍫", "✨"],
+    emojis: ["🍫", "🍪", "🍰", "🧁", "🎭"],
     keywords: ["truffle day", "chocolate", "desserts", "luxury"],
   },
   {
@@ -109,7 +109,7 @@ export const mayHolidays: Holiday[] = [
       secondary: "#FF0000",
       accent: "#FFD700",
     },
-    emojis: ["🇲🇽", "🌮", "🎭", "🎪", "💃"],
+    emojis: ["🎉", "🌮", "🇲🇽", "🍹", "🥑"],
     keywords: ["cinco de mayo", "mexican culture", "heritage", "celebration"],
   },
   {

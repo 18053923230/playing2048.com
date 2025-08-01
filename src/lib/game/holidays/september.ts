@@ -158,7 +158,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["🎃", "👻", "🦇", "🕷️", "🍬"],
+    emojis: ["🎃", "🥒", "🥗", "🌱", "🍂"],
     keywords: ["acorn squash day", "squash", "vegetables", "autumn"],
   },
   {
@@ -273,7 +273,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🥤", "🍫", "🍪", "🍩", "🍬"],
+    emojis: ["🥤", "🍫", "🍩", "🍪", "🧃"],
     keywords: ["chocolate milkshake day", "chocolate", "milkshake", "drinks"],
   },
   {
@@ -476,7 +476,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🕊️", "🕊️", "��️", "🕊️", "🕊️"],
+    emojis: ["🕊️", "✌️", "🌍", "🤝", "🌈"],
     keywords: ["international day of peace", "peace", "harmony", "global"],
   },
   {
@@ -520,7 +520,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🥒", "🥬", "🥒", "🥒", "🥒"],
+    emojis: ["🥒", "🥬", "🥕", "🥗", "🍽️"],
     keywords: ["snack a pickle time day", "pickles", "snacks", "preservation"],
   },
   {
@@ -542,7 +542,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#8B4513",
     },
-    emojis: ["🍒", "🔥", "🍒", "🔥", "🍒"],
+    emojis: ["🍒", "🔥", "🍰", "🍮", "🍨"],
     keywords: ["cherries jubilee day", "cherries", "desserts", "fine dining"],
   },
   {
@@ -564,7 +564,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#4169E1",
       accent: "#FFD700",
     },
-    emojis: ["🦞", "🦐", "🦀", "🦞", "🦞"],
+    emojis: ["🦞", "🦐", "🦀", "🌊", "🍽️"],
     keywords: ["lobster day", "lobster", "seafood", "luxury"],
   },
   {
@@ -586,7 +586,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#8B4513",
     },
-    emojis: ["🥞", "🍯", "🥞", "🥞", "🥞"],
+    emojis: ["🥞", "🍯", "🍳", "🍽️", "🧈"],
     keywords: ["pancake day", "pancakes", "breakfast", "comfort food"],
   },
   {
@@ -608,7 +608,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🥛", "🍫", "🥛", "🍫", "🥛"],
+    emojis: ["🥛", "🍫", "🍩", "🍪", "🧃"],
     keywords: ["chocolate milk day", "chocolate", "milk", "drinks"],
   },
   {
@@ -630,7 +630,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🥧", "🍓", "🍓", "🍓", "🥧"],
+    emojis: ["🥧", "🍓", "🍰", "🍮", "🍨"],
     keywords: ["strawberry cream pie day", "strawberries", "pie", "desserts"],
   },
   {
@@ -652,7 +652,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["☕", "🫖", "☕", "🫖", "☕"],
+    emojis: ["☕", "🫖", "🥐", "🍩", "🍪"],
     keywords: ["coffee day", "coffee", "beverages", "culture"],
   },
   {
@@ -674,7 +674,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFA500",
       accent: "#FFD700",
     },
-    emojis: ["🍎", "🍏", "🍎", "🍏", "🍎"],
+    emojis: ["🍎", "🍏", "🍂", "🥤", "🍯"],
     keywords: ["hot mulled cider day", "cider", "apples", "autumn"],
   },
 ];

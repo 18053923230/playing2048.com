@@ -21,7 +21,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍪", "🍰", "🍩", "🧁", "🍪"],
+    emojis: ["🍪", "🍰", "🍩", "🧁", "👨‍👩‍👧‍👦"],
     keywords: ["homemade cookies day", "cookies", "baking", "family"],
   },
   {
@@ -43,7 +43,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🦪", "🦐", "🦀", "🐚", "🦪"],
+    emojis: ["🦪", "🦐", "🦀", "🐚", "🍽️"],
     keywords: ["fried scallops day", "scallops", "seafood", "coastal"],
   },
   {
@@ -65,7 +65,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍮", "🍰", "🍪", "🍩", "🍮"],
+    emojis: ["🍮", "🍰", "🍪", "🍩", "🧁"],
     keywords: ["caramel custard day", "custard", "caramel", "desserts"],
   },
   {
@@ -87,7 +87,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#228B22",
       accent: "#FFD700",
     },
-    emojis: ["🌮", "🌯", "🥑", "🧀", "🌮"],
+    emojis: ["🌮", "🌯", "🥑", "🧀", "🌶️"],
     keywords: ["taco day", "tacos", "mexican", "cuisine"],
   },
   {
@@ -131,7 +131,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#8B4513",
     },
-    emojis: ["🍜", "🍝", "🍲", "🍜", "🍜"],
+    emojis: ["🍜", "🍝", "🍲", "🥢", "🍽️"],
     keywords: ["noodle day", "noodles", "pasta", "international"],
   },
   {
@@ -153,7 +153,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["☕", "🫖", "☕", "🫖", "☕"],
+    emojis: ["☕", "🧊", "🍫", "🍦", "🥤"],
     keywords: ["frappe day", "frappe", "coffee", "beverages"],
   },
   {
@@ -175,7 +175,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#8B4513",
     },
-    emojis: ["🥪", "🍞", "🥪", "🥪", "🥪"],
+    emojis: ["🥪", "🍞", "🍬", "🍫", "🧁"],
     keywords: [
       "fluffernutter day",
       "sandwich",
@@ -202,7 +202,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#8B4513",
     },
-    emojis: ["🧀", "🍕", "🧀", "🧀", "🧀"],
+    emojis: ["🧀", "🍕", "🥖", "🥯", "🍽️"],
     keywords: ["moldy cheese day", "cheese", "artisanal", "food"],
   },
   {
@@ -224,7 +224,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍰", "🎂", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🎂", "🧁", "🍮", "🍨"],
     keywords: ["angel food cake day", "cake", "baking", "desserts"],
   },
   {
@@ -268,7 +268,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF0000",
     },
-    emojis: ["🍲", "🍜", "🍲", "🍲", "🍲"],
+    emojis: ["🍲", "🦞", "🦐", "🍽️", "🥣"],
     keywords: ["gumbo day", "gumbo", "louisiana", "cuisine"],
   },
   {
@@ -290,7 +290,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FF69B4",
       accent: "#4169E1",
     },
-    emojis: ["🍫", "🍪", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🍪", "🍩", "🍰", "🍨"],
     keywords: ["m&m day", "m&ms", "candy", "chocolate"],
   },
   {
@@ -312,7 +312,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍰", "🎂", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🎂", "🧁", "🍮", "🍨"],
     keywords: ["dessert day", "desserts", "sweets", "celebration"],
   },
   {
@@ -334,7 +334,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#228B22",
     },
-    emojis: ["🍄", "🍄", "🍄", "🍄", "🍄"],
+    emojis: ["🍄", "🥗", "🌱", "🍽️", "🥣"],
     keywords: ["mushroom day", "mushrooms", "fungi", "vegetables"],
   },
   {
@@ -356,7 +356,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#4169E1",
     },
-    emojis: ["🌾", "🌾", "🌾", "🌾", "🌾"],
+    emojis: ["🌾", "🍞", "🥗", "🍚", "🍽️"],
     keywords: ["world food day", "food security", "agriculture", "global"],
   },
   {
@@ -378,7 +378,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF0000",
     },
-    emojis: ["🍝", "🍜", "🍝", "🍝", "🍝"],
+    emojis: ["🍝", "🍜", "🍲", "🥢", "🍽️"],
     keywords: ["pasta day", "pasta", "italian", "cuisine"],
   },
   {
@@ -400,7 +400,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🧁", "🍰", "🧁", "🧁", "🧁"],
+    emojis: ["🧁", "🍰", "🎂", "🍫", "🍨"],
     keywords: ["chocolate cupcake day", "cupcakes", "chocolate", "desserts"],
   },
   {
@@ -422,7 +422,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🍲", "🍜", "🍲", "🍲", "🍲"],
+    emojis: ["🍲", "🦞", "🦐", "🍽️", "🥣"],
     keywords: ["seafood bisque day", "bisque", "seafood", "soup"],
   },
   {
@@ -444,7 +444,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍎", "🍏", "🍎", "🍎", "🍎"],
+    emojis: ["🍎", "🍏", "🍐", "🍇", "🍑"],
     keywords: ["brandied fruit day", "fruit", "preservation", "seasonal"],
   },
   {
@@ -466,7 +466,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🎃", "🎃", "🎃", "🎃", "🎃"],
+    emojis: ["🎃", "🍰", "🧀", "🍮", "🍨"],
     keywords: ["pumpkin cheesecake day", "pumpkin", "cheesecake", "autumn"],
   },
   {
@@ -488,7 +488,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#228B22",
     },
-    emojis: ["🥜", "🌰", "🥜", "🥜", "🥜"],
+    emojis: ["🥜", "🌰", "🥥", "🍪", "🍽️"],
     keywords: ["nut day", "nuts", "nutrition", "health"],
   },
   {
@@ -510,7 +510,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFFFFF",
     },
-    emojis: ["🍰", "🎂", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🎂", "🧁", "🍮", "🍨"],
     keywords: [
       "boston cream pie day",
       "boston cream pie",
@@ -537,7 +537,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#8B4513",
     },
-    emojis: ["🥪", "🍞", "🥪", "🥪", "🥪"],
+    emojis: ["🥪", "🍞", "🧀", "🍳", "🍽️"],
     keywords: ["bologna day", "bologna", "lunch meat", "sandwiches"],
   },
   {
@@ -559,7 +559,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#8B4513",
     },
-    emojis: ["🍔", "🍟", "🍔", "🍔", "🍔"],
+    emojis: ["🍔", "🍟", "🍕", "🍗", "🍽️"],
     keywords: [
       "greasy foods day",
       "greasy foods",
@@ -586,7 +586,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFD700",
     },
-    emojis: ["🎃", "🎃", "🎃", "🎃", "🎃"],
+    emojis: ["🎃", "🍰", "🍮", "🍨", "🍪"],
     keywords: ["pumpkin day", "pumpkin", "autumn", "seasonal"],
   },
   {
@@ -608,7 +608,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFFFFF",
     },
-    emojis: ["🍺", "🍻", "🍺", "🍺", "🍺"],
+    emojis: ["🍺", "🍻", "🥂", "🍷", "🍽️"],
     keywords: ["american beer day", "beer", "brewing", "american"],
   },
   {
@@ -630,7 +630,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍫", "🍪", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🍪", "🍩", "🍰", "🍨"],
     keywords: ["chocolate day", "chocolate", "sweets", "indulgence"],
   },
   {
@@ -652,7 +652,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🥣", "🍲", "🥣", "🥣", "🥣"],
+    emojis: ["🥣", "🍲", "🍚", "🍞", "🍽️"],
     keywords: ["oatmeal day", "oatmeal", "breakfast", "health"],
   },
   {
@@ -674,7 +674,7 @@ export const octoberHolidays: Holiday[] = [
       secondary: "#FFA500",
       accent: "#FFFFFF",
     },
-    emojis: ["🍬", "🍭", "🍬", "🍬", "🍬"],
+    emojis: ["🍬", "🍭", "🎃", "👻", "🍫"],
     keywords: ["candy corn day", "candy corn", "halloween", "seasonal"],
   },
   {

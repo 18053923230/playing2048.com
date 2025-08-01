@@ -21,7 +21,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🥧", "🥧", "🥧", "🥧", "🥧"],
+    emojis: ["🥧", "🍎", "🍒", "🍫", "🍋"],
     keywords: ["pie day", "pies", "desserts", "comfort food"],
   },
   {
@@ -43,7 +43,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FFFFFF",
     },
-    emojis: ["🍩", "🍩", "🍩", "🍩", "🍩"],
+    emojis: ["🍩", "🍏", "🍎", "🍠", "🍪"],
     keywords: ["fritters day", "fritters", "fried", "desserts"],
   },
   {
@@ -65,7 +65,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🏠", "🏠", "🏠", "🏠", "🏠"],
+    emojis: ["🏠", "🛏️", "🧣", "🧤", "🕯️"],
     keywords: ["roof over head day", "shelter", "gratitude", "homelessness"],
   },
   {
@@ -87,7 +87,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍪", "🍪", "🍪", "🍪", "🍪"],
+    emojis: ["🍪", "🎄", "🍫", "🧁", "🍰"],
     keywords: ["cookie day", "cookies", "baking", "comfort food"],
   },
   {
@@ -109,7 +109,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍰", "🍰", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🍫", "🇦🇹", "🍒", "🥧"],
     keywords: ["sacher torte day", "sacher torte", "austrian", "chocolate"],
   },
   {
@@ -131,7 +131,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#228B22",
       accent: "#FFD700",
     },
-    emojis: ["🍅", "🍅", "🍅", "🍅", "🍅"],
+    emojis: ["🍅", "🥒", "🥣", "🥗", "🫑"],
     keywords: ["gazpacho day", "gazpacho", "spanish", "soup"],
   },
   {
@@ -153,7 +153,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🍭", "🍭", "🍭", "🍭", "🍭"],
+    emojis: ["🍭", "🎡", "🎠", "🎪", "🧁"],
     keywords: ["cotton candy day", "cotton candy", "carnival", "sweets"],
   },
   {
@@ -175,7 +175,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍫", "🍫", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🧁", "🍰", "🥧", "🍪"],
     keywords: ["brownie day", "brownies", "chocolate", "desserts"],
   },
   {
@@ -197,7 +197,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#8B4513",
       accent: "#FF69B4",
     },
-    emojis: ["🥐", "🥐", "🥐", "🥐", "🥐"],
+    emojis: ["🥐", "🍰", "🥧", "🍩", "🧁"],
     keywords: ["pastry day", "pastries", "baking", "art"],
   },
   {
@@ -219,7 +219,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🤝", "🤝", "🤝", "🤝", "🤝"],
+    emojis: ["🤝", "🌍", "🕊️", "🌐", "🫱"],
     keywords: ["human rights day", "human rights", "equality", "justice"],
   },
   {
@@ -241,7 +241,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#8B4513",
     },
-    emojis: ["🍝", "🍝", "🍝", "🍝", "🍝"],
+    emojis: ["🍝", "🍲", "🍜", "🥣", "🧀"],
     keywords: ["noodle ring day", "noodle rings", "pasta", "creative"],
   },
   {
@@ -263,7 +263,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FF69B4",
     },
-    emojis: ["🍎", "🍎", "🍎", "🍎", "🍎"],
+    emojis: ["🍎", "🥥", "🍊", "🍒", "🥭"],
     keywords: ["ambrosia day", "ambrosia", "fruit salad", "southern"],
   },
   {
@@ -285,7 +285,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["☕", "☕", "☕", "☕", "☕"],
+    emojis: ["☕", "🍫", "🥛", "🍪", "🧁"],
     keywords: ["cocoa day", "cocoa", "hot chocolate", "warm"],
   },
   {
@@ -307,7 +307,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍲", "🍲", "🍲", "🍲", "🍲"],
+    emojis: ["🍲", "🐟", "🦐", "🍅", "🥖"],
     keywords: ["bouillabaisse day", "bouillabaisse", "french", "seafood"],
   },
   {
@@ -329,7 +329,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🧁", "🧁", "🧁", "🧁", "🧁"],
+    emojis: ["🧁", "🍰", "🎂", "🍦", "🍩"],
     keywords: ["cupcake day", "cupcakes", "desserts", "individual"],
   },
   {
@@ -351,7 +351,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍫", "🍫", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🍓", "🍌", "🍊", "🍩"],
     keywords: ["chocolate covered day", "chocolate", "creativity", "treats"],
   },
   {
@@ -373,7 +373,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍁", "🍁", "🍁", "🍁", "🍁"],
+    emojis: ["🍁", "🥞", "🍯", "🌳", "🍂"],
     keywords: ["maple syrup day", "maple syrup", "natural", "sweetener"],
   },
   {
@@ -395,7 +395,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🐷", "🐷", "🐷", "🐷", "🐷"],
+    emojis: ["🐷", "🍖", "🥓", "🍽️", "🥔"],
     keywords: [
       "roast suckling pig day",
       "suckling pig",
@@ -422,7 +422,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#4169E1",
     },
-    emojis: ["🍬", "🍬", "🍬", "🍬", "🍬"],
+    emojis: ["🍬", "🍭", "🍫", "🍡", "🍩"],
     keywords: ["hard candy day", "hard candy", "sweets", "tradition"],
   },
   {
@@ -444,7 +444,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍷", "🍷", "🍷", "🍷", "🍷"],
+    emojis: ["🍷", "🍊", "🍓", "🍋", "🍇"],
     keywords: ["sangria day", "sangria", "spanish", "wine"],
   },
   {
@@ -466,7 +466,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["❄️", "❄️", "❄️", "❄️", "❄️"],
+    emojis: ["❄️", "🌌", "🌙", "🕯️", "🌠"],
     keywords: ["winter solstice", "solstice", "winter", "astronomy"],
   },
   {
@@ -488,7 +488,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍞", "🍞", "🍞", "🍞", "🍞"],
+    emojis: ["🍞", "🥜", "🌰", "🍯", "🥖"],
     keywords: ["date nut bread day", "date nut bread", "traditional", "baking"],
   },
   {
@@ -510,7 +510,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🍪", "🍪", "🍪", "🍪", "🍪"],
+    emojis: ["🍪", "🎄", "🍬", "🥨", "🍰"],
     keywords: ["pfeffernuesse day", "pfeffernuesse", "german", "holiday"],
   },
   {
@@ -532,7 +532,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#228B22",
       accent: "#FFD700",
     },
-    emojis: ["🎄", "🎄", "🎄", "🎄", "🎄"],
+    emojis: ["🎄", "🎅", "🕯️", "🎁", "🍪"],
     keywords: ["christmas eve", "christmas", "eve", "celebration"],
   },
   {
@@ -554,7 +554,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#228B22",
       accent: "#FFD700",
     },
-    emojis: ["🎄", "🎄", "🎄", "🎄", "🎄"],
+    emojis: ["🎄", "🎅", "🕯️", "🎁", "🍪"],
     keywords: ["christmas day", "christmas", "jesus", "celebration"],
   },
   {
@@ -576,7 +576,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["🎁", "🎁", "🎁", "🎁", "🎁"],
+    emojis: ["🎁", "🧸", "🛍️", "🎀", "🎄"],
     keywords: ["boxing day", "charity", "giving", "uk"],
   },
   {
@@ -598,7 +598,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍰", "🍰", "🍰", "🍰", "🍰"],
+    emojis: ["🍰", "🍒", "🍇", "🍊", "🥜"],
     keywords: ["fruitcake day", "fruitcake", "holiday", "traditional"],
   },
   {
@@ -620,7 +620,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍫", "🍫", "🍫", "🍫", "🍫"],
+    emojis: ["🍫", "🍬", "🍭", "🍡", "🍩"],
     keywords: ["chocolate candy day", "chocolate", "candy", "indulgence"],
   },
   {
@@ -642,7 +642,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF0000",
     },
-    emojis: ["🍲", "🍲", "🍲", "🍲", "🍲"],
+    emojis: ["🍲", "🌶️", "🥣", "🥔", "🥕"],
     keywords: ["pepper pot day", "pepper pot", "soup", "spicy"],
   },
   {
@@ -664,7 +664,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#4169E1",
       accent: "#FFD700",
     },
-    emojis: ["🧂", "🧂", "🧂", "🧂", "🧂"],
+    emojis: ["🧂", "🥣", "🍞", "🥛", "🍪"],
     keywords: [
       "bicarbonate of soda day",
       "baking soda",
@@ -691,7 +691,7 @@ export const decemberHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFFFFF",
     },
-    emojis: ["🎆", "🎆", "🎆", "🎆", "🎆"],
+    emojis: ["🎆", "🎉", "🥂", "🍾", "🕛"],
     keywords: ["new year's eve", "new year", "celebration", "countdown"],
   },
 ];

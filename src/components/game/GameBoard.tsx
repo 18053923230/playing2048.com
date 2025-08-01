@@ -7,12 +7,14 @@ import { GameTileComponent } from "./GameTile";
 interface GameBoardProps {
   board: (GameTile | null)[][];
   theme: string;
+  selectedColor?: string;
   onTileClick?: (tile: GameTile) => void;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
   board,
   theme,
+  selectedColor = "#FF6B6B",
   onTileClick,
 }) => {
   const boardRef = useRef<HTMLDivElement>(null);
@@ -27,21 +29,36 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   }, []);
 
   return (
-    <div className="relative bg-gray-200 rounded-lg p-4 shadow-lg">
+    <div
+      className="relative rounded-lg p-4 shadow-lg transition-all duration-300"
+      style={{
+        backgroundColor: `${selectedColor}15`,
+        border: `2px solid ${selectedColor}30`,
+      }}
+    >
       <div
         ref={boardRef}
-        className="grid grid-cols-4 gap-2 w-80 h-80 bg-gray-300 rounded-lg p-2"
+        className="grid grid-cols-4 gap-2 w-80 h-80 rounded-lg p-2 transition-all duration-300"
+        style={{
+          backgroundColor: `${selectedColor}25`,
+          border: `1px solid ${selectedColor}40`,
+        }}
       >
         {board.map((row, rowIndex) =>
           row.map((tile, colIndex) => (
             <div
               key={`${rowIndex}-${colIndex}`}
-              className="w-full h-full bg-gray-100 rounded-lg flex items-center justify-center"
+              className="w-full h-full rounded-lg flex items-center justify-center transition-all duration-200"
+              style={{
+                backgroundColor: `${selectedColor}10`,
+                border: `1px solid ${selectedColor}20`,
+              }}
             >
               {tile && (
                 <GameTileComponent
                   tile={tile}
                   theme={theme}
+                  selectedColor={selectedColor}
                   onClick={() => onTileClick?.(tile)}
                 />
               )}

@@ -44,7 +44,7 @@ export const januaryHolidays: Holiday[] = [
       secondary: "#00CED1",
       accent: "#FFD700",
     },
-    emojis: ["🚀", "👽", "🌌", "🤖", "⚡"],
+    emojis: ["🚀", "👽", "🌌", "🤖", "🛸"],
     keywords: ["science fiction", "literature", "technology", "imagination"],
   },
   {
@@ -66,7 +66,7 @@ export const januaryHolidays: Holiday[] = [
       secondary: "#87CEEB",
       accent: "#DDA0DD",
     },
-    emojis: ["🧘", "💚", "🌿", "☮️", "✨"],
+    emojis: ["🧘", "💚", "🌿", "☮️", "🌸"],
     keywords: ["wellness", "mind-body", "health", "meditation"],
   },
   {
@@ -110,7 +110,7 @@ export const januaryHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#87CEEB",
     },
-    emojis: ["🐦", "🦅", "🦜", "🦢", "🦉"],
+    emojis: ["🦜", "🐦", "🌳", "🪶", "🦉"],
     keywords: ["birds", "conservation", "wildlife", "nature"],
   },
   {

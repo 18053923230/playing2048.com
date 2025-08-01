@@ -43,7 +43,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍦", "🍫", "🍪", "🍨", "🍦"],
+    emojis: ["🍦", "🍫", "🍪", "🍨", "🎭"],
     keywords: ["rocky road day", "ice cream", "desserts", "chocolate"],
   },
   {
@@ -87,7 +87,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#8B4513",
     },
-    emojis: ["��", "🍕", "🍽️", "🧀", "🧀"],
+    emojis: ["🥪", "🍕", "🍽️", "🧀", "🥖"],
     keywords: ["cheese day", "dairy", "culinary", "food"],
   },
   {
@@ -334,7 +334,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#FF69B4",
       accent: "#4169E1",
     },
-    emojis: ["😊", "😄", "😄", "😁", "😊"],
+    emojis: ["😊", "😄", "😁", "😃", "😆"],
     keywords: ["smile power day", "smiling", "happiness", "positivity"],
   },
   {
@@ -356,7 +356,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["🍫", "🍬", "🍬", "🍰", "🍫"],
+    emojis: ["🍫", "🍬", "🍰", "🍭", "🍮"],
     keywords: ["fudge day", "candy", "sweets", "confectionery"],
   },
   {
@@ -400,7 +400,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#87CEEB",
       accent: "#FFD700",
     },
-    emojis: ["��", "🏞️", "🎣", "🌊", "🌊"],
+    emojis: ["🎣", "🏞️", "🌊", "🐟", "🐠"],
     keywords: ["go fishing day", "fishing", "outdoors", "nature"],
   },
   {
@@ -598,7 +598,7 @@ export const juneHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FF69B4",
     },
-    emojis: ["��️", "☀️", "☀️", "😎", "🕶️"],
+    emojis: ["😎", "🕶️", "☀️", "🌞", "🌤️"],
     keywords: ["sunglasses day", "eye protection", "style", "health"],
   },
   {

@@ -21,7 +21,7 @@ export const marchHolidays: Holiday[] = [
       secondary: "#FFD700",
       accent: "#FFA500",
     },
-    emojis: ["🥜", "🍞", "🍪", "🥪", "🥜"],
+    emojis: ["🥜", "🍞", "🍪", "🥪", "🥤"],
     keywords: ["peanut butter day", "spread", "sandwiches", "nutrition"],
   },
   {
@@ -109,7 +109,7 @@ export const marchHolidays: Holiday[] = [
       secondary: "#FFA500",
       accent: "#FF69B4",
     },
-    emojis: ["🧀", "🍿", "🎪", "🍽️", "🧀"],
+    emojis: ["🧀", "🍟", "🥨", "🍿", "🥯"],
     keywords: ["cheese doodle day", "snacks", "comfort food", "cheese"],
   },
   {
