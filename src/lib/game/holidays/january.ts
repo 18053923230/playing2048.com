@@ -22,7 +22,7 @@ export const januaryHolidays: Holiday[] = [
       secondary: "#FF69B4",
       accent: "#00CED1",
     },
-    emojis: ["🎆", "🎊", "🎉", "🕐", "✨"],
+    emojis: ["🎊", "🎆", "🎉", "🕐", "✨"],
     keywords: ["new year", "celebration", "fireworks", "resolution"],
   },
   {

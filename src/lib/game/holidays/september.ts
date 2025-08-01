@@ -476,7 +476,7 @@ export const septemberHolidays: Holiday[] = [
       secondary: "#FFFFFF",
       accent: "#FFD700",
     },
-    emojis: ["️", "️", "️", "🕊️", "🕊️"],
+    emojis: ["🕊️", "🕊️", "��️", "🕊️", "🕊️"],
     keywords: ["international day of peace", "peace", "harmony", "global"],
   },
   {
