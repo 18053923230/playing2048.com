@@ -4,13 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { getTodayHolidays } from "@/lib/game/holidayThemes";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export const Navigation: React.FC = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isHolidayDropdownOpen, setIsHolidayDropdownOpen] = useState(false);
   const todayHolidays = getTodayHolidays();
 
   const navItems = [
@@ -29,18 +27,6 @@ export const Navigation: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // 点击外部关闭下拉菜单
-  useEffect(() => {
-    const handleClickOutside = () => {
-      if (isHolidayDropdownOpen) {
-        setIsHolidayDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [isHolidayDropdownOpen]);
 
   return (
     <nav
@@ -77,53 +63,15 @@ export const Navigation: React.FC = () => {
               </Link>
             ))}
 
-            {/* 今日节日下拉菜单 */}
+            {/* 今日节日直接链接 */}
             {todayHolidays.length > 0 && (
-              <div className="relative">
-                <button
-                  onClick={() =>
-                    setIsHolidayDropdownOpen(!isHolidayDropdownOpen)
-                  }
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-orange-400 to-pink-500 text-white hover:shadow-lg transition-all duration-200"
-                >
-                  <span className="text-lg">🎉</span>
-                  Today&apos;s Holiday
-                  <ChevronDownIcon
-                    className={`w-4 h-4 transition-transform duration-200 ${
-                      isHolidayDropdownOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-
-                {isHolidayDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
-                    <div className="px-4 py-2 border-b border-gray-100">
-                      <h3 className="text-sm font-semibold text-gray-700">
-                        Today&apos;s Special Holidays
-                      </h3>
-                    </div>
-                    {todayHolidays.map((holiday) => (
-                      <Link
-                        key={holiday.name}
-                        href={`/holiday/${holiday.date}`}
-                        onClick={() => setIsHolidayDropdownOpen(false)}
-                        className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors"
-                      >
-                        <span className="text-2xl">{holiday.emojis[0]}</span>
-                        <div className="flex-1">
-                          <div className="font-medium text-gray-900">
-                            {holiday.name}
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            {holiday.country} • {holiday.category}
-                          </div>
-                        </div>
-                        <span className="text-blue-500 text-sm">Play →</span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <Link
+                href={`/holiday/${todayHolidays[0].date}`}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-orange-400 to-pink-500 text-white hover:shadow-lg transition-all duration-200"
+              >
+                <span className="text-lg">🎉</span>
+                Today&apos;s Holiday
+              </Link>
             )}
           </div>
 
@@ -161,35 +109,21 @@ export const Navigation: React.FC = () => {
               {/* 移动端今日节日 */}
               {todayHolidays.length > 0 && (
                 <div className="pt-2 border-t border-gray-200">
-                  <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                    Today&apos;s Holiday
-                  </div>
-                  {todayHolidays.map((holiday) => (
-                    <Link
-                      key={holiday.name}
-                      href={`/holiday/${holiday.date}`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-orange-400 to-pink-500 text-white hover:shadow-md transition-all duration-200"
-                    >
-                      <span className="text-lg">{holiday.emojis[0]}</span>
-                      <span className="flex-1">{holiday.name}</span>
-                      <span className="text-xs">Play</span>
-                    </Link>
-                  ))}
+                  <Link
+                    href={`/holiday/${todayHolidays[0].date}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-orange-400 to-pink-500 text-white hover:shadow-md transition-all duration-200"
+                  >
+                    <span className="text-lg">🎉</span>
+                    <span className="flex-1">Today&apos;s Holiday</span>
+                    <span className="text-xs">Play</span>
+                  </Link>
                 </div>
               )}
             </div>
           </div>
         )}
       </div>
-
-      {/* 点击外部关闭下拉菜单 */}
-      {isHolidayDropdownOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setIsHolidayDropdownOpen(false)}
-        />
-      )}
     </nav>
   );
 };
