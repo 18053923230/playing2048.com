@@ -12,10 +12,6 @@ export const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHolidayDropdownOpen, setIsHolidayDropdownOpen] = useState(false);
   const todayHolidays = getTodayHolidays();
-  const today = new Date();
-  const month = (today.getMonth() + 1).toString().padStart(2, "0");
-  const day = today.getDate().toString().padStart(2, "0");
-  const todayDateString = `${month}-${day}`;
 
   const navItems = [
     { href: "/", label: "Home", icon: "🏠" },
@@ -109,7 +105,7 @@ export const Navigation: React.FC = () => {
                     {todayHolidays.map((holiday) => (
                       <Link
                         key={holiday.name}
-                        href={`/holiday/${todayDateString}`}
+                        href={`/holiday/${holiday.date}`}
                         onClick={() => setIsHolidayDropdownOpen(false)}
                         className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors"
                       >
@@ -171,7 +167,7 @@ export const Navigation: React.FC = () => {
                   {todayHolidays.map((holiday) => (
                     <Link
                       key={holiday.name}
-                      href={`/holiday/${todayDateString}`}
+                      href={`/holiday/${holiday.date}`}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-orange-400 to-pink-500 text-white hover:shadow-md transition-all duration-200"
                     >

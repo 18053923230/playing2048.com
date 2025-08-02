@@ -43,18 +43,22 @@ export default function HomePage() {
               </p>
               <div className="flex justify-center gap-2">
                 {todayHolidays.slice(0, 3).map((holiday) => (
-                  <span
+                  <Link
                     key={holiday.name}
-                    className="inline-flex items-center gap-1 px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200"
+                    href={`/holiday/${holiday.date}`}
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200 hover:bg-orange-50 hover:border-orange-300 transition-colors"
                   >
                     <span className="text-lg">{holiday.emojis[0]}</span>
                     {holiday.name}
-                  </span>
+                  </Link>
                 ))}
                 {todayHolidays.length > 3 && (
-                  <span className="inline-flex items-center px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200">
+                  <Link
+                    href={`/holiday/${todayHolidays[0].date}`}
+                    className="inline-flex items-center px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200 hover:bg-orange-50 hover:border-orange-300 transition-colors"
+                  >
                     +{todayHolidays.length - 3} more
-                  </span>
+                  </Link>
                 )}
               </div>
             </div>
