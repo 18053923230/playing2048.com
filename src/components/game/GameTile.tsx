@@ -41,7 +41,7 @@ export const GameTileComponent: React.FC<GameTileComponentProps> = ({
       `}
       style={{
         backgroundColor: getTileColor(tile.value),
-        color: themeConfig.colors.text,
+        color: "#2f4f4f", // 使用固定的深色文字，确保在所有背景色上都清晰可见
         border: `2px solid ${selectedColor}60`,
       }}
       onClick={onClick}

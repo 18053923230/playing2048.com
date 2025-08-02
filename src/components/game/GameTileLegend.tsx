@@ -82,7 +82,7 @@ export const GameTileLegend: React.FC<GameTileLegendProps> = ({
               key={tile.value}
               className="flex flex-col items-center p-2 rounded-lg border transition-all duration-200 hover:scale-105"
               style={{
-                backgroundColor: colorVariants[index] || `${tile.color}20`,
+                backgroundColor: colorVariants[index] || `${selectedColor}20`,
                 borderColor: selectedColor,
               }}
             >

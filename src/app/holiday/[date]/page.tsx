@@ -22,6 +22,7 @@ export default function HolidayPage() {
   const [holiday, setHoliday] = useState<Holiday | null>(null);
   const [game, setGame] = useState<Game2048 | null>(null);
   const [gameState, setGameState] = useState<GameState | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string>("#FF6B6B");
 
   useEffect(() => {
     const foundHoliday = getHolidayByDate(dateString);
@@ -76,6 +77,10 @@ export default function HolidayPage() {
     setGameState(game.getState());
   };
 
+  const handleColorChange = (color: string) => {
+    setSelectedColor(color);
+  };
+
   if (!holiday || !gameState) {
     return <div>Loading...</div>;
   }
@@ -94,12 +99,7 @@ export default function HolidayPage() {
     <>
       <SEOHead {...seoConfig} />
 
-      <div
-        className="min-h-screen bg-gradient-to-br"
-        style={{
-          background: `linear-gradient(135deg, ${holiday.colors.primary}20, ${holiday.colors.secondary}20)`,
-        }}
-      >
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
             <header className="text-center mb-8">
@@ -108,7 +108,7 @@ export default function HolidayPage() {
               </h1>
               <p className="text-gray-600 mb-4">{holiday.description}</p>
               <div className="flex justify-center gap-2 mb-4">
-                {holiday.emojis.map((emoji, index) => (
+                {holiday.emojis.map((emoji: string, index: number) => (
                   <span key={index} className="text-2xl">
                     {emoji}
                   </span>
@@ -126,21 +126,28 @@ export default function HolidayPage() {
                   score={gameState.score}
                   bestScore={gameState.bestScore}
                   moves={gameState.moves}
+                  selectedColor={selectedColor}
                 />
                 <GameControls
                   onNewGame={handleNewGame}
                   onReset={handleReset}
                   onMove={handleMove}
+                  selectedColor={selectedColor}
                 />
               </div>
 
               {/* 游戏棋盘 */}
-              <div className="md:col-span-2 flex flex-col items-center">
+              <div className="md:col-span-2 flex flex-col items-center max-w-4xl">
                 <GameBoard
                   board={gameState.board}
                   theme={`holiday-${dateString}`}
+                  selectedColor={selectedColor}
                 />
-                <GameTileLegend theme={`holiday-${dateString}`} />
+                <GameTileLegend
+                  theme={`holiday-${dateString}`}
+                  selectedColor={selectedColor}
+                  onColorChange={handleColorChange}
+                />
               </div>
             </div>
 
@@ -220,7 +227,7 @@ export default function HolidayPage() {
                     Key Themes and Keywords:
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {holiday.keywords.map((keyword, index) => (
+                    {holiday.keywords.map((keyword: string, index: number) => (
                       <span
                         key={index}
                         className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
