@@ -35,22 +35,31 @@ export default function HomePage() {
             </div>
           </header>
 
-          {/* 今日节日 */}
+          {/* 今日节日提示 */}
           {todayHolidays.length > 0 && (
-            <div className="bg-white rounded-lg shadow-md p-6 text-center mb-8 max-w-6xl mx-auto">
-              <h2 className="text-2xl font-semibold mb-4">
-                Today&apos;s Special Holidays! 🎉
+            <div className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-lg shadow-md p-6 text-center mb-8 max-w-6xl mx-auto border border-orange-200">
+              <h2 className="text-2xl font-semibold mb-4 text-orange-800">
+                🎉 Today&apos;s Special Holidays Available!
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {todayHolidays.map((holiday) => (
-                  <Link
+              <p className="text-orange-700 mb-4">
+                Check out today&apos;s special holiday games in the navigation
+                bar above!
+              </p>
+              <div className="flex justify-center gap-2">
+                {todayHolidays.slice(0, 3).map((holiday) => (
+                  <span
                     key={holiday.name}
-                    href={`/holiday/${todayDateString}`}
-                    className="block bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transition-colors"
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200"
                   >
-                    Play {holiday.name} {holiday.emojis[0] || ""}
-                  </Link>
+                    <span className="text-lg">{holiday.emojis[0]}</span>
+                    {holiday.name}
+                  </span>
                 ))}
+                {todayHolidays.length > 3 && (
+                  <span className="inline-flex items-center px-3 py-1 bg-white rounded-full text-sm font-medium text-orange-700 border border-orange-200">
+                    +{todayHolidays.length - 3} more
+                  </span>
+                )}
               </div>
             </div>
           )}
