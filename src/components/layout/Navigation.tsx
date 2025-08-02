@@ -36,7 +36,7 @@ export const Navigation: React.FC = () => {
 
   // 点击外部关闭下拉菜单
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = () => {
       if (isHolidayDropdownOpen) {
         setIsHolidayDropdownOpen(false);
       }

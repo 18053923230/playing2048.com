@@ -214,10 +214,11 @@ export default function FAQPage() {
                       How do I reset my high score?
                     </h3>
                     <p className="text-gray-600">
-                      You can reset your high score by clearing your browser's
-                      local storage for this website, or by using the "New Game"
-                      button multiple times (though this will only reset the
-                      current game, not the saved high score).
+                      You can reset your high score by clearing your
+                      browser&apos;s local storage for this website, or by using
+                      the &quot;New Game&quot; button multiple times (though
+                      this will only reset the current game, not the saved high
+                      score).
                     </p>
                   </div>
                 </div>

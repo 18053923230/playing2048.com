@@ -3,6 +3,20 @@
 import { useState, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
+// 扩展 Window 接口以包含 gtag
+declare global {
+  interface Window {
+    gtag?: (
+      command: string,
+      action: string,
+      config: {
+        analytics_storage: string;
+        ad_storage: string;
+      }
+    ) => void;
+  }
+}
+
 export function CookieConsent() {
   const [showConsent, setShowConsent] = useState(false);
 
@@ -56,8 +70,8 @@ export function CookieConsent() {
                 <p className="text-sm text-gray-300">
                   We use cookies and similar technologies to improve your
                   experience, analyze site traffic, and personalize content. By
-                  clicking "Accept", you consent to our use of cookies. You can
-                  learn more in our{" "}
+                  clicking &quot;Accept&quot;, you consent to our use of
+                  cookies. You can learn more in our{" "}
                   <a href="/cookies" className="text-blue-400 hover:underline">
                     Cookie Policy
                   </a>

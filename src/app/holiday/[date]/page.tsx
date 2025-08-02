@@ -9,11 +9,7 @@ import { GameStats } from "@/components/game/GameStats";
 import { GameOverlay } from "@/components/game/GameOverlay";
 import { Game2048 } from "@/lib/game/gameLogic";
 import { GameState, Direction } from "@/types/game";
-import {
-  getHolidayByDate,
-  generateHolidayTheme,
-  Holiday,
-} from "@/lib/game/holidayThemes";
+import { getHolidayByDate, Holiday } from "@/lib/game/holidayThemes";
 import { GameTileLegend } from "@/components/game/GameTileLegend";
 import { MobileGameLayout } from "@/components/game/MobileGameLayout";
 
@@ -109,7 +105,6 @@ export default function HolidayPage() {
         onNewGame={handleNewGame}
         onReset={handleReset}
         onContinue={handleContinue}
-        onColorChange={handleColorChange}
         title={`${holiday.emojis[0]} 2048 ${holiday.name}`}
         description={holiday.description}
       />

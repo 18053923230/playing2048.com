@@ -158,7 +158,6 @@ export default function GamePage() {
         onNewGame={handleNewGame}
         onReset={handleReset}
         onContinue={handleContinue}
-        onColorChange={handleColorChange}
         title={
           isHolidayTheme && holiday
             ? `${holiday.emojis[0]} 2048 ${holiday.name}`

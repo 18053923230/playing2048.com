@@ -6,10 +6,6 @@ import Link from "next/link";
 
 export default function HomePage() {
   const todayHolidays = getTodayHolidays();
-  const today = new Date();
-  const month = (today.getMonth() + 1).toString().padStart(2, "0");
-  const day = today.getDate().toString().padStart(2, "0");
-  const todayDateString = `${month}-${day}`;
 
   return (
     <>

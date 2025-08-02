@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { globalHolidays } from "@/lib/game/holidayThemes";
 import Link from "next/link";
 
@@ -76,7 +76,7 @@ export const HolidayCalendar: React.FC<CalendarProps> = ({
           }`}
         >
           <div className="text-sm font-semibold mb-1">{day}</div>
-          {dayHolidays.map((holiday, index) => (
+          {dayHolidays.map((holiday) => (
             <Link
               key={holiday.name}
               href={`/holiday/${dateString}`}

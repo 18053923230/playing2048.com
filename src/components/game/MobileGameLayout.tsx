@@ -17,7 +17,7 @@ interface MobileGameLayoutProps {
   onNewGame: () => void;
   onReset: () => void;
   onContinue: () => void;
-  onColorChange: (color: string) => void;
+
   title?: string;
   description?: string;
 }
@@ -30,7 +30,6 @@ export function MobileGameLayout({
   onNewGame,
   onReset,
   onContinue,
-  onColorChange,
   title,
   description,
 }: MobileGameLayoutProps) {
