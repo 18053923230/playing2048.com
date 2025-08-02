@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/layout/Navigation";
+import { Footer } from "@/components/layout/Footer";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +33,8 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Footer />
+        <CookieConsent />
 
         <script
           async
@@ -45,7 +49,13 @@ export default function RootLayout({
           }
           gtag("js", new Date());
 
-            gtag("config", "G-24SXVL7J95");
+          // 默认禁用跟踪，等待用户同意
+          gtag("consent", "default", {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+          });
+          
+          gtag("config", "G-24SXVL7J95");
           `,
           }}
         />

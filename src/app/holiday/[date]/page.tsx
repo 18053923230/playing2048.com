@@ -15,6 +15,7 @@ import {
   Holiday,
 } from "@/lib/game/holidayThemes";
 import { GameTileLegend } from "@/components/game/GameTileLegend";
+import { MobileGameLayout } from "@/components/game/MobileGameLayout";
 
 export default function HolidayPage() {
   const params = useParams();
@@ -99,7 +100,22 @@ export default function HolidayPage() {
     <>
       <SEOHead {...seoConfig} />
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* 移动端布局 */}
+      <MobileGameLayout
+        gameState={gameState}
+        theme={`holiday-${dateString}`}
+        selectedColor={selectedColor}
+        onMove={handleMove}
+        onNewGame={handleNewGame}
+        onReset={handleReset}
+        onContinue={handleContinue}
+        onColorChange={handleColorChange}
+        title={`${holiday.emojis[0]} 2048 ${holiday.name}`}
+        description={holiday.description}
+      />
+
+      {/* 桌面端布局 */}
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
             <header className="text-center mb-8">

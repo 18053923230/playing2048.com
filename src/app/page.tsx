@@ -37,7 +37,7 @@ export default function HomePage() {
 
           {/* 今日节日 */}
           {todayHolidays.length > 0 && (
-            <div className="bg-white rounded-lg shadow-md p-6 text-center mb-8">
+            <div className="bg-white rounded-lg shadow-md p-6 text-center mb-8 max-w-6xl mx-auto">
               <h2 className="text-2xl font-semibold mb-4">
                 Today&apos;s Special Holidays! 🎉
               </h2>
@@ -82,6 +82,30 @@ export default function HomePage() {
                 <div className="text-4xl mb-4">🎃</div>
                 <h2 className="text-2xl font-bold mb-2">Halloween</h2>
                 <p className="text-gray-600">Spooky puzzle adventure</p>
+              </div>
+            </Link>
+
+            <Link href="/unblocked" className="group">
+              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div className="text-4xl mb-4">🌐</div>
+                <h2 className="text-2xl font-bold mb-2">Unblocked</h2>
+                <p className="text-gray-600">Play anywhere, anytime</p>
+              </div>
+            </Link>
+
+            <Link href="/monkey-type" className="group">
+              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div className="text-4xl mb-4">🐒</div>
+                <h2 className="text-2xl font-bold mb-2">Monkey Type</h2>
+                <p className="text-gray-600">Typing speed challenge</p>
+              </div>
+            </Link>
+
+            <Link href="/roman-numerals" className="group">
+              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div className="text-4xl mb-4">🏛️</div>
+                <h2 className="text-2xl font-bold mb-2">Roman Numerals</h2>
+                <p className="text-gray-600">Ancient number learning</p>
               </div>
             </Link>
           </div>
@@ -195,12 +219,51 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* 学习资源链接 */}
+          <div className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-md p-8 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-semibold text-center mb-6">
+              📚 Learn & Improve
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link href="/how-to-play" className="group">
+                <div className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl mb-3">📖</div>
+                  <h3 className="text-lg font-semibold mb-2">How to Play</h3>
+                  <p className="text-gray-600 text-sm">
+                    Complete game tutorial
+                  </p>
+                </div>
+              </Link>
+              <Link href="/strategy" className="group">
+                <div className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl mb-3">🎯</div>
+                  <h3 className="text-lg font-semibold mb-2">Strategy Guide</h3>
+                  <p className="text-gray-600 text-sm">Master the game</p>
+                </div>
+              </Link>
+              <Link href="/tips-and-tricks" className="group">
+                <div className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl mb-3">💡</div>
+                  <h3 className="text-lg font-semibold mb-2">Tips & Tricks</h3>
+                  <p className="text-gray-600 text-sm">Advanced techniques</p>
+                </div>
+              </Link>
+              <Link href="/faq" className="group">
+                <div className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl mb-3">❓</div>
+                  <h3 className="text-lg font-semibold mb-2">FAQ</h3>
+                  <p className="text-gray-600 text-sm">Get help & answers</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
           <div className="text-center mt-12">
             <Link
-              href="/strategy"
-              className="inline-block bg-teal-500 text-white px-8 py-3 rounded-lg hover:bg-teal-600 transition-colors"
+              href="/game/cupcakes"
+              className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              Learn How to Play
+              🧁 Start Playing Now
             </Link>
           </div>
         </div>

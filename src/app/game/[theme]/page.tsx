@@ -8,6 +8,7 @@ import { GameControls } from "@/components/game/GameControls";
 import { GameStats } from "@/components/game/GameStats";
 import { GameOverlay } from "@/components/game/GameOverlay";
 import { GameTileLegend } from "@/components/game/GameTileLegend";
+import { MobileGameLayout } from "@/components/game/MobileGameLayout";
 import { Game2048 } from "@/lib/game/gameLogic";
 import { GameState, Direction } from "@/types/game";
 
@@ -148,7 +149,34 @@ export default function GamePage() {
     <>
       <SEOHead {...seoConfig} />
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* 移动端布局 */}
+      <MobileGameLayout
+        gameState={gameState}
+        theme={themeName}
+        selectedColor={selectedColor}
+        onMove={handleMove}
+        onNewGame={handleNewGame}
+        onReset={handleReset}
+        onContinue={handleContinue}
+        onColorChange={handleColorChange}
+        title={
+          isHolidayTheme && holiday
+            ? `${holiday.emojis[0]} 2048 ${holiday.name}`
+            : themeConfig
+            ? `${themeConfig.emoji} ${themeConfig.name}`
+            : "2048 Game"
+        }
+        description={
+          isHolidayTheme && holiday
+            ? holiday.description
+            : themeConfig
+            ? themeConfig.description
+            : "Join numbers and get to the winning tile!"
+        }
+      />
+
+      {/* 桌面端布局 */}
+      <div className="hidden md:block min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
             <header className="text-center mb-8">
@@ -272,7 +300,7 @@ export default function GamePage() {
                   )}
 
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">
+                    <h4 className="text-sm font-semibold mb-2">
                       Key Themes and Keywords:
                     </h4>
                     <div className="flex flex-wrap gap-2">

@@ -9,6 +9,7 @@ interface GameBoardProps {
   theme: string;
   selectedColor?: string;
   onTileClick?: (tile: GameTile) => void;
+  mobile?: boolean;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
@@ -16,6 +17,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   theme,
   selectedColor = "#FF6B6B",
   onTileClick,
+  mobile = false,
 }) => {
   const boardRef = useRef<HTMLDivElement>(null);
 
@@ -38,7 +40,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     >
       <div
         ref={boardRef}
-        className="grid grid-cols-4 gap-2 w-80 h-80 rounded-lg p-2 transition-all duration-300"
+        className={`grid grid-cols-4 gap-2 rounded-lg p-2 transition-all duration-300 ${
+          mobile ? "w-72 h-72" : "w-80 h-80"
+        }`}
         style={{
           backgroundColor: `${selectedColor}25`,
           border: `1px solid ${selectedColor}40`,

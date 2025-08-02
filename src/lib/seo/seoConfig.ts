@@ -48,4 +48,44 @@ export const seoConfig = {
       "how to win 2048 cupcakes, 2048 cupcakes strategy, 2048 tips and tricks, cupcake game guide",
     canonical: "https://playing2048.com/strategy",
   },
+  howToPlay: {
+    title: "How to Play 2048 Cupcakes - Complete Game Guide & Tutorial",
+    description:
+      "Learn how to play 2048 Cupcakes with our complete tutorial. Master the rules, controls, and strategies to become a 2048 champion!",
+    keywords:
+      "how to play 2048 cupcakes, 2048 cupcakes tutorial, 2048 game rules, 2048 cupcakes guide, learn 2048",
+    canonical: "https://playing2048.com/how-to-play",
+  },
+  tipsAndTricks: {
+    title: "2048 Cupcakes Tips & Tricks - Advanced Strategies to Win",
+    description:
+      "Master 2048 Cupcakes with our expert tips and tricks! Learn advanced strategies, corner techniques, and snake patterns to achieve higher scores.",
+    keywords:
+      "2048 cupcakes tips, 2048 cupcakes tricks, 2048 strategy, 2048 advanced techniques, how to get high score 2048",
+    canonical: "https://playing2048.com/tips-and-tricks",
+  },
+  faq: {
+    title: "2048 Cupcakes FAQ - Frequently Asked Questions & Answers",
+    description:
+      "Find answers to all your questions about 2048 Cupcakes! From game rules to technical issues, we've got you covered with comprehensive FAQs.",
+    keywords:
+      "2048 cupcakes faq, 2048 cupcakes questions, 2048 game help, 2048 cupcakes support, 2048 cupcakes problems",
+    canonical: "https://playing2048.com/faq",
+  },
+  monkeyType: {
+    title: "2048 Cupcakes Monkey Type Edition - Typing Speed Challenge",
+    description:
+      "Challenge your typing speed with 2048 Cupcakes Monkey Type Edition! Combine puzzle solving with typing practice in this unique 2048 variant.",
+    keywords:
+      "2048 cupcakes monkey type, monkey type 2048, typing game 2048, speed typing puzzle, 2048 typing challenge",
+    canonical: "https://playing2048.com/monkey-type",
+  },
+  romanNumerals: {
+    title: "2048 Cupcakes Roman Numerals - Ancient Number Puzzle Game",
+    description:
+      "Experience 2048 Cupcakes with Roman numerals! Merge ancient number symbols in this educational and challenging puzzle game. Learn Roman numerals while having fun!",
+    keywords:
+      "2048 cupcakes roman numerals, roman numerals 2048, ancient numbers game, educational puzzle game, learn roman numerals",
+    canonical: "https://playing2048.com/roman-numerals",
+  },
 };

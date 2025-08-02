@@ -16,6 +16,7 @@ interface GameControlsProps {
   onReset: () => void;
   onMove: (direction: Direction) => void;
   selectedColor?: string;
+  mobile?: boolean;
 }
 
 export const GameControls: React.FC<GameControlsProps> = ({
@@ -23,6 +24,7 @@ export const GameControls: React.FC<GameControlsProps> = ({
   onReset,
   onMove,
   selectedColor = "#FF6B6B",
+  mobile = false,
 }) => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -57,6 +59,102 @@ export const GameControls: React.FC<GameControlsProps> = ({
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onMove]);
+
+  if (mobile) {
+    return (
+      <div className="space-y-3">
+        {/* 移动端控制按钮 */}
+        <div className="grid grid-cols-2 gap-2">
+          <Button
+            onClick={onNewGame}
+            size="sm"
+            className="transition-all duration-300"
+            style={{
+              backgroundColor: selectedColor,
+              borderColor: selectedColor,
+              color: "white",
+            }}
+          >
+            New Game
+          </Button>
+          <Button
+            onClick={onReset}
+            variant="outline"
+            size="sm"
+            className="transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
+            Reset
+          </Button>
+        </div>
+
+        {/* 移动端方向键 */}
+        <div className="grid grid-cols-3 gap-2">
+          <div></div>
+          <Button
+            onClick={() => onMove("up")}
+            variant="outline"
+            size="sm"
+            className="h-10 transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
+            <ArrowUpIcon className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button
+            onClick={() => onMove("left")}
+            variant="outline"
+            size="sm"
+            className="h-10 transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
+            <ArrowLeftIcon className="h-4 w-4" />
+          </Button>
+          <div
+            className="h-10 flex items-center justify-center text-xs transition-all duration-300"
+            style={{ color: `${selectedColor}80` }}
+          >
+            SWIPE
+          </div>
+          <Button
+            onClick={() => onMove("right")}
+            variant="outline"
+            size="sm"
+            className="h-10 transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
+            <ArrowRightIcon className="h-4 w-4" />
+          </Button>
+          <div></div>
+          <Button
+            onClick={() => onMove("down")}
+            variant="outline"
+            size="sm"
+            className="h-10 transition-all duration-300"
+            style={{
+              borderColor: `${selectedColor}60`,
+              color: selectedColor,
+            }}
+          >
+            <ArrowDownIcon className="h-4 w-4" />
+          </Button>
+          <div></div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">
