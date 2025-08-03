@@ -5,6 +5,7 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/layout/CookieConsent";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { GameLayoutWrapper } from "@/components/layout/GameLayoutWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,8 +34,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navigation />
-        <div className="pt-16">{children}</div>
-        <Footer />
+        <GameLayoutWrapper>
+          <div className="pt-16">{children}</div>
+          <Footer />
+        </GameLayoutWrapper>
         <CookieConsent />
         <ScrollToTop />
 

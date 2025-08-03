@@ -120,3 +120,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 移动端游戏页面特殊样式 */
+.game-mobile-layout {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.game-mobile-layout .pt-16 {
+  padding-top: 0; /* 移除顶部padding，因为导航栏是fixed的 */
+}
