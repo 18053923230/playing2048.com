@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { globalHolidays } from "@/lib/game/holidayThemes";
@@ -14,7 +14,8 @@ export const HolidayCalendar: React.FC<CalendarProps> = ({
   currentMonth = new Date().getMonth(),
 }) => {
   const [selectedMonth, setSelectedMonth] = useState(currentMonth);
-  const currentYear = new Date().getFullYear();
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const currentYear = currentDate.getFullYear();
 
   const months = [
     "January",
@@ -30,6 +31,27 @@ export const HolidayCalendar: React.FC<CalendarProps> = ({
     "November",
     "December",
   ];
+
+  // 每天更新当前日期
+  useEffect(() => {
+    const updateDate = () => {
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      // 如果日期发生变化，更新当前日期
+      if (currentDate.getTime() !== today.getTime()) {
+        setCurrentDate(today);
+      }
+    };
+
+    // 立即检查一次
+    updateDate();
+
+    // 设置定时器，每小时检查一次
+    const interval = setInterval(updateDate, 60 * 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, [currentDate]);
 
   const getHolidaysForMonth = (month: number) => {
     const monthStr = String(month + 1).padStart(2, "0");
@@ -66,7 +88,8 @@ export const HolidayCalendar: React.FC<CalendarProps> = ({
       )}-${String(day).padStart(2, "0")}`;
       const dayHolidays = holidays.filter((h) => h.date === dateString);
       const isToday =
-        new Date().getMonth() === selectedMonth && new Date().getDate() === day;
+        currentDate.getMonth() === selectedMonth &&
+        currentDate.getDate() === day;
 
       days.push(
         <div

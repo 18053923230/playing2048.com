@@ -1,11 +1,37 @@
+"use client";
+
 import { SEOHead } from "@/components/seo/SEOHead";
 import { seoConfig } from "@/lib/seo/seoConfig";
 import { getTodayHolidays } from "@/lib/game/holidayThemes";
 import { HolidayCalendar } from "@/components/ui/calendar";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function HomePage() {
-  const todayHolidays = getTodayHolidays();
+  const [todayHolidays, setTodayHolidays] = useState(getTodayHolidays());
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  // 每天更新节日数据
+  useEffect(() => {
+    const updateHolidays = () => {
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      // 如果日期发生变化，更新节日数据
+      if (currentDate.getTime() !== today.getTime()) {
+        setCurrentDate(today);
+        setTodayHolidays(getTodayHolidays());
+      }
+    };
+
+    // 立即检查一次
+    updateHolidays();
+
+    // 设置定时器，每小时检查一次
+    const interval = setInterval(updateHolidays, 60 * 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, [currentDate]);
 
   return (
     <>
