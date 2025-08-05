@@ -24,8 +24,8 @@ export default function HolidayPage() {
   useEffect(() => {
     const foundHoliday = getHolidayByDate(dateString);
     if (!foundHoliday) {
-      // 如果没有找到节日，重定向到首页
-      window.location.href = "/";
+      // 如果没有找到节日，重定向到404页面
+      window.location.href = "/404";
       return;
     }
 

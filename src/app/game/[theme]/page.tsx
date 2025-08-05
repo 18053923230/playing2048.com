@@ -72,6 +72,16 @@ export default function GamePage() {
   useEffect(() => {
     if (!themeName) return;
 
+    // 检查主题是否有效
+    const isValidTheme =
+      themeConfigs[themeName as keyof typeof themeConfigs] ||
+      getHolidayByTheme(themeName);
+    if (!isValidTheme) {
+      // 无效主题，重定向到404页面
+      window.location.href = "/404";
+      return;
+    }
+
     const newGame = new Game2048({
       size: 4,
       targetValue: 4096,
